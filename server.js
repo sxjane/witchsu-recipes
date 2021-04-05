@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 
-const PORT = 3001
+const PORT = 3000
 const app = express()
 
 const STATIC_DIR = path.join(__dirname, 'build')
