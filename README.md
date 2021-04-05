@@ -8,7 +8,7 @@ Its client uses React
 
 To bundle web pages uses Webpack and Babel
 
-
+________________________________________________________________
 
 npm run client: start the client 
 
