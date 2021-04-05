@@ -7,9 +7,9 @@ It is a setup for the fullstack website developement.
 
 
 To run it 
-*npm run client: start the client 
-*npm run start: start the server on Port:3000
-*localhost:3000 in the browser to access the website 
+* in the terminal **npm run client** to start the client 
+* in the terminal **npm run start** start the server on Port:3000
+* in the browser **localhost:3000** to access the website 
 
 
 
