@@ -13,13 +13,31 @@ module.exports={
                 test:/\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader:'babel-loader'
+            },
+            {
+                test:/\.(png|jpe?g|gif)$/,
+                loader:'file-loader'
+            },
+            // {
+            //     test:/\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+            //     loader:'url-loader',
+            //     options:{
+            //         limit:10000
+            //     }
+            // },
+            {
+                test: /\.(css)$/, 
+                use:['style-loader','css-loader']
             }
         ]
     },
     plugins:[
         new html_webpack_plugin({
             template: path.join(__dirname, 'src', 'index.html'),
-            favicon: path.join(__dirname, 'images','title.ico')
+            favicon: path.join(__dirname, 'src/images','title.ico')
         })
-    ]
+    ],
+    resolve:{
+        extensions:['.js', '.jsx']
+    }
 }

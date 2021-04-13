@@ -13,6 +13,6 @@ app.get('/', (req, res)=>{
     res.sendFile(INDEX_HTML)
 })
 
-app.listen(PORT, ()=>{
+app.listen(PORT, '0.0.0.0',()=>{
     console.log('Server is on the port:', PORT)
 })
