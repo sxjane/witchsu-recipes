@@ -6,11 +6,13 @@
 
 }
 .food_image_container{
-    max-width: 600px;
+    flex:1 600px;
+    border: solid 5px blue;
 }  
 
 .food_description_order_container{
-    /* border: solid 5px blue; */
+    border: solid 5px blue;
+    flex:1 600px;
     display: flex;
     flex-direction: column;
     align-items: center; 
