@@ -4,9 +4,11 @@ export default class FoodDescription extends React.Component{
     render(){
         return(
             <div className='foodDescription'>
-                 <p>We love our products</p>
-                 <p>Our commitment to our products is evident not only in the selection of our ingredients but also in there preparation.</p>
-                 <p>Here, the top priority is always: freshness and quality</p>
+                 <h2>Pancake with Meat</h2>
+                 <h3>Egg 2</h3>
+                 <h3>Meat 100g</h3>
+                 <h3>Vegetable 10g</h3>
+                 <h3>Total 500g</h3>
             </div>
         )
        

@@ -1,6 +1,6 @@
 import React from 'react'
 import WeekRecommendation from './WeekRecommendation'
-import FoodOnHomeOrder from './FoodOnHomeOrder'
+import FoodOnHomeOrder from './FoodSpecialOrder'
 import './styles.css'
 
 export default class App extends React.Component{
@@ -21,7 +21,7 @@ export default class App extends React.Component{
                     <h2>Menu in the waiting list</h2>
                     <h3>Chef recommendation</h3>
                 </div> */}
-                <FoodOnHomeOrder />
+                <WeekRecommendation />
                 {/* <div>
                     <p>Team and Restaurant image</p>
                 </div>

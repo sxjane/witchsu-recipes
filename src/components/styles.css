@@ -1,18 +1,25 @@
-.food_on_home_container{
+.WeekContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.food_container{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 .food_image_container{
-    flex:1 600px;
-    border: solid 5px blue;
+    flex:1;
+    /* border: solid 1px blue; */
+    min-height: 350px;
 }  
 
-.food_description_order_container{
-    border: solid 5px blue;
-    flex:1 600px;
+.food_description_container{
+    /* border: solid 1px blue; */
+    flex:1;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -21,11 +28,10 @@
 
 
 .foodDescription{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font: 1em sans-serif;
-    color: red;
-    max-width: 590px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    columns: #4f614f;;
     text-align: center;
+    font-size:x-large;
 }
 
 img{
