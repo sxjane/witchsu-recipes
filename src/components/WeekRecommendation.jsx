@@ -1,18 +1,20 @@
 import React from 'react'
 import FoodSpecialOrder from './FoodSpecialOrder'
-import Pancake from '../images/pancake1200*800.png'
-import Meat from '../images/rou1200*900.jpeg'
-import Fish from '../images/yu1200*800.jpeg'
-import Cake from '../images/bing3.jpeg'
+import FishFlower from '../images/FishFlower.png'
+import Fish from '../images/Fish.png'
+import Soup from '../images/Soup.png'
+import Mushroom from '../images/Mushroom.png'
+import Pancake from '../images/Pancake.png'
 
 export default class Special extends React.Component{
     render(){
         return(
             <div>
-                <FoodSpecialOrder url={Pancake} flag={true}/>
-                <FoodSpecialOrder url={Meat} flag={false}/>
-                <FoodSpecialOrder url={Fish} flag={true}/>
-                <FoodSpecialOrder url={Cake} flag={false}/>
+                <FoodSpecialOrder url={Fish} imgFirst={true}/>
+                <FoodSpecialOrder url={Mushroom} imgFirst={false}/>
+                <FoodSpecialOrder url={FishFlower} imgFirst={true}/>
+                <FoodSpecialOrder url={Pancake} imgFirst={false}/>
+                <FoodSpecialOrder url={Soup} imgFirst={true}/>
             </div>
         )
     }
