@@ -11,11 +11,9 @@ export default class HomeRestaurant extends React.Component{
                         <img src={Restaurant} />
                     </div>
                     <div className='food_text_container foodText'>
-                        <h2>Pancake with Meat</h2>
-                        <h3>Egg 2</h3>
-                        <h3>Meat 100g</h3>
-                        <h3>Vegetable 10g</h3>
-                        <h3>Total 500g</h3>
+                        <h3>Nihao Restaurant</h3>
+                        <h3>Call Us: <br/>15908118021</h3>
+                        <h3>Find Us: <br/>Hans-Stützle-Str. 19, 81249 Munich</h3>
                     </div>
             </div>
             </div>
