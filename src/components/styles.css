@@ -1,3 +1,13 @@
+/*HomeText*/
+.homeText{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-transform: uppercase;
+}
 
 /*HomeSlider*/
 .homeSlider{
@@ -30,9 +40,7 @@
 }
 .foodText{
     font-family: 'Courier New', Courier, monospace, sans-serif;
-    columns: #4f614f;;
     text-align: center;
-    font-size:x-large;
 }
 
 /*img*/
