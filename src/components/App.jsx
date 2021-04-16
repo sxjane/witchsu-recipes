@@ -1,5 +1,5 @@
 import React from 'react'
-import WeekRecommendation from './WeekRecommendation'
+import HomeOrder from './HomeOrder'
 import HomeSlider from './HomeSlider'
 import './styles.css'
 
@@ -17,7 +17,7 @@ export default class App extends React.Component{
         return(
             <div >
                 <HomeSlider />
-                {/* <WeekRecommendation /> */}
+                <HomeOrder />
             </div> 
         )
     }

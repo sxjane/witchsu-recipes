@@ -1,12 +1,12 @@
-/*HomeSlider*/
 
+/*HomeSlider*/
 .homeSlider{
     --slider-height-percentage:40%!important;
     --organic-arrow-height: 40px!important;
     --organic-arrow-thickness: 6px!important;
 }
 
-/*FoodSpecialOrder */
+/*FoodOrder */
 .food_container{
     display:flex;
     flex-wrap: wrap;
@@ -17,7 +17,10 @@
     flex:1;
     /* border: solid 1px blue; */
 }  
-.food_description_container{
+
+
+/*FoodText*/
+.food_text_container{
     /* border: solid 1px blue; */
     flex:1 ;
     display: flex;
@@ -25,20 +28,18 @@
     align-items: center; 
     justify-content: space-between;
 }
-
-/*FoodDescription*/
-.foodDescription{
+.foodText{
     font-family: 'Courier New', Courier, monospace, sans-serif;
     columns: #4f614f;;
     text-align: center;
     font-size:x-large;
 }
 
-/*FoodImage*/
+/*img*/
 img{
     display:block;
     margin-left:auto;
     margin-right:auto;
     max-width:100%!important;
     height:auto
-} 
+}
