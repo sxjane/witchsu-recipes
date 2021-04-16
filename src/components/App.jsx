@@ -1,6 +1,6 @@
 import React from 'react'
 import WeekRecommendation from './WeekRecommendation'
-import FoodOnHomeOrder from './FoodSpecialOrder'
+import HomeSlider from './HomeSlider'
 import './styles.css'
 
 export default class App extends React.Component{
@@ -16,18 +16,8 @@ export default class App extends React.Component{
     render(){
         return(
             <div >
-                {/* <div>
-                    <h1>Head in the waiting list</h1>
-                    <h2>Menu in the waiting list</h2>
-                    <h3>Chef recommendation</h3>
-                </div> */}
-                <WeekRecommendation />
-                {/* <div>
-                    <p>Team and Restaurant image</p>
-                </div>
-                <div>
-                    <p>foot and things of developers</p>
-                </div> */}
+                <HomeSlider />
+                {/* <WeekRecommendation /> */}
             </div> 
         )
     }

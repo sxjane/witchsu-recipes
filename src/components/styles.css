@@ -1,3 +1,11 @@
+/*HomeSlider*/
+
+.homeSlider{
+    --slider-height-percentage:40%!important;
+    --organic-arrow-height: 40px!important;
+    --organic-arrow-thickness: 6px!important;
+}
+
 /*FoodSpecialOrder */
 .food_container{
     display:flex;
