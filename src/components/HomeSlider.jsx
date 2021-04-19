@@ -29,6 +29,7 @@ export default class HomeSlider extends React.Component{
                 <div data-src={DeskGreen} />
                 <div data-src={Slider1} />
                 <div data-src={Slider2} />
+                <div data-src={Slider3} />
                 <div data-src={DeskFlower} />
                 
             </AutoplaySlider>

@@ -9,6 +9,8 @@ import {
     Link
 } from 'react-router-dom'
 
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
+import AccountCircleIcon from '@material-ui/icons/AccountCircle'
 import Logo from '../images/logo.png'
 import './styles.css'
 
@@ -28,12 +30,15 @@ export default class App extends React.Component{
                 <div>
                     <div className='menu_container'>
                         <div className='menu_logo'>
-                            <Link to='/' ><img src={Logo} className='logo'></img></Link>
+                            <Link to='/' className=''><img src={Logo}></img></Link>
                         </div>
                         <div className='menu_text'>
-                            <Link to='/'><h3>Home</h3></Link>
-                            <Link to='/food'><h3>Menu</h3></Link>
-                            <Link to='/about'><h3>Restaurant</h3></Link> 
+                            <Link to='/food'><h2>Menu</h2></Link>
+                            <Link to='/about'><h2>About</h2></Link> 
+                        </div>
+                        <div className='menu_account'>
+                            <Link to='/account'><AccountCircleIcon fontSize='large'/></Link>
+                            <Link to='/cart'><AddShoppingCartIcon fontSize='large'/></Link>
                         </div>
                     </div>
                     

@@ -1,6 +1,5 @@
 import React from 'react'
-import {Button} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Button from '@material-ui/core/Button'
 import './styles.css'
 
 export default class FoodText extends React.Component{
@@ -14,7 +13,7 @@ export default class FoodText extends React.Component{
                     <h3>Vegetable 10g</h3>
                     <h3>Total 500g</h3>
                 </div>
-                <Button>Add to Cart</Button>
+                <Button variant='outlined' color='secondary'>Add to Cart</Button>
             </div>
         )
        
