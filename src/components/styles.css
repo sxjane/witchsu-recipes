@@ -1,6 +1,46 @@
+/*App*/
+.menu_container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
+    background-color: #f8f5f1;
+    z-index: 999;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.menu_text{
+    /* border: solid 1px blue; */
+    flex:2;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+   
+}
+
+.menu_logo{
+    /* border: solid 1px blue; */
+    padding-left: 50px;
+    padding-right: 400px;
+    flex:1;
+}
+
+a{
+    color:black
+}
+
+a:hover{
+    color:#ce1212
+}
+
 /*HomeText*/
 .homeText{
-    min-height: 300px;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
