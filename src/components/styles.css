@@ -7,8 +7,7 @@
     top:0px;
     background-color: #f8f5f1;
     z-index: 999;
-    /* padding-top: 15px; */
-    /* padding-bottom: 5px; */
+    padding-top: 5px;
 }
 .menu_text{
     /* border: solid 1px blue; */
@@ -40,6 +39,10 @@ a{
 
 a:hover{
     color:#ce1212
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
 }
 
 /*HomeText*/
