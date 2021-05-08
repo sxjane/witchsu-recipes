@@ -1,14 +1,13 @@
 {
-  "name": "restaurant",
+  "name": "WitchSu",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "client": "webpack --mode development --watch"
   },
-  "author": "",
+  "author": "Xiaojie Si",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.11.3",

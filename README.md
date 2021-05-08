@@ -1,10 +1,3 @@
-# HelloWorld_React_Nodejs_Webpack
-
-It is a setup for the fullstack website development. 
- * Its server uses Nodejs Express 
- * Its client uses React 
- * To bundle web pages uses Webpack and Babel
-
 
 To run it 
 * in the terminal **npm run client** to start the client 

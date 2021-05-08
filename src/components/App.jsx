@@ -35,8 +35,8 @@ export default class App extends React.Component{
                             <Link to='/' className=''><img src={Logo}></img></Link>
                         </div>
                         <div className='menu_text'>
-                            <Link to='/category'><h2>Menu</h2></Link>
-                            <Link to='/about'><h2>About</h2></Link> 
+                            <Link to='/category'><p>Menu</p></Link>
+                            <Link to='/about'><p>About</p></Link> 
                         </div>
                         <div className='menu_account'>
                             <Link to='/account'><AccountCircleIcon fontSize='large'/></Link>

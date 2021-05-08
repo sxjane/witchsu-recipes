@@ -38,7 +38,7 @@ export default function StickyFooter() {
 
   return (
     <footer className={classes.footer}>
-      <Container maxWidth="sm">
+      <Container>
         <Typography variant="h6" align="center" gutterBottom>
           NiHao Restaurant
         </Typography>
@@ -49,12 +49,5 @@ export default function StickyFooter() {
       </Container>
       
    </footer>
-
-      // <footer className={classes.footer}>
-      //   <Container maxWidth="sm">
-      //     <Typography variant="body1"></Typography>
-      //     <Copyright />
-      //   </Container>
-      // </footer>
   )
 }

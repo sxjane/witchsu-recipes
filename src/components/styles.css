@@ -1,3 +1,13 @@
+.toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* border: solid 1px blue; */
+}
+.toolbar_child{
+    display:box
+}
 /*App*/
 .menu_container{
     display: flex;
@@ -16,7 +26,8 @@
     align-items:center;
     justify-content: space-evenly;
     font-family: 'Courier New', Courier, monospace, sans-serif!important;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    font-size:x-large;   
 }
 .menu_logo{
     /* border: solid 1px blue; */
@@ -47,7 +58,8 @@ a:hover, a:visited, a:link, a:active{
 
 /*HomeText*/
 .homeText{
-    min-height: 150px;
+    min-height: 120px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +67,7 @@ a:hover, a:visited, a:link, a:active{
     font-family:'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-weight: normal;
+    background-color:#fbfbfb;
 }
 
 /*HomeSlider*/
