@@ -9,10 +9,10 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
       <Link color="inherit" href="">
-        Xiaojie Si
+        Xiaojie Si and SUSU
       </Link>{' '}
       {new Date().getFullYear()}
-      {' sixiaojie.jane@gmail.com.'}   
+      {/* {' sixiaojie.jane@gmail.com.'}    */}
     </Typography>
   )
 }
@@ -24,12 +24,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 'auto',
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
-    // borderTopStyle: 'solid',
-    // borderWidth: '0.5px',
-    // borderColor:'#e0e0de'
-    // border: 'solid 1px blue',
-    // backgroundColor:'#f6f6f6'
-    // theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
   },
 }));
 
@@ -39,15 +33,11 @@ export default function StickyFooter() {
   return (
     <footer className={classes.footer}>
       <Container>
-        <Typography variant="h6" align="center" gutterBottom>
-          NiHao Restaurant
-        </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-        Chinese Authentic Food
+        女巫SU-👽SU-AI SU-阿拉丁SU-哆啦A梦SU-释迦摩尼心性SU
         </Typography>
         <Copyright />
       </Container>
-      
    </footer>
   )
 }

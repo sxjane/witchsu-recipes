@@ -1,7 +1,5 @@
 import React from 'react'
 import Home from './Home'
-import Category from './Category'
-import About from './About'
 import Footer from './StickyFooter'
 
 import {
@@ -11,10 +9,8 @@ import {
     Link
 } from 'react-router-dom'
 
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle'
-import Logo from '../images/logo.png'
-import './styles.css'
+import Logo from '../images/Logo.png'
+import './styles.scss'
 
 export default class App extends React.Component{
     constructor(props){
@@ -23,7 +19,7 @@ export default class App extends React.Component{
     }
     componentDidMount(){
         const bodyElt = document.querySelector('body')
-        bodyElt.style.backgroundColor = '#f8f5f1'
+        bodyElt.style.backgroundColor = '#f1f1e6'
     }
 
     render(){
@@ -32,26 +28,18 @@ export default class App extends React.Component{
                 <Router>
                     <div className='menu_container'>
                         <div className='menu_logo'>
-                            <Link to='/' className=''><img src={Logo}></img></Link>
+                            <Link to='/'><img src={Logo}/></Link>
                         </div>
+                        <div className='menu_search'></div>
                         <div className='menu_text'>
-                            <Link to='/category'><p>Menu</p></Link>
-                            <Link to='/about'><p>About</p></Link> 
-                        </div>
-                        <div className='menu_account'>
-                            <Link to='/account'><AccountCircleIcon fontSize='large'/></Link>
-                            <Link to='/cart'><AddShoppingCartIcon fontSize='large'/></Link>
+                            <Link to='/menu'><p>魔力菜谱</p></Link>
+                            <Link to='/blog'><p>精彩问答</p></Link>
+                            <Link to='/about'><p>女巫与精灵</p></Link>
                         </div>
                     </div>
                     <Switch>
                         <Route exact path='/'>
                             <Home />
-                        </Route>
-                        <Route path='/category'>
-                            <Category />
-                        </Route>
-                        <Route path='/about'>
-                            <About/>
                         </Route>
                     </Switch>
                 </Router>

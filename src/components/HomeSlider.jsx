@@ -3,14 +3,14 @@ import AwesomeSlider from 'react-awesome-slider'
 import withAutoplay from 'react-awesome-slider/dist/autoplay'
 
 import 'react-awesome-slider/dist/styles.css'
-import 'react-awesome-slider/dist/custom-animations/open-animation.css'
-import './styles.css'
+import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css'
+import './styles.scss'
 
-import Slider5 from '../images/slider5.png'
-import Slider4 from '../images/slider4.png'
-import Slider1 from '../images/slider1.jpeg'
-import Slider2 from '../images/slider2.jpeg'
-import Slider3 from '../images/slider3.jpeg'
+import SliderBe from '../images/sliderBe.png'
+import SliderDesk from '../images/sliderDesk.png'
+import SliderFish from '../images/sliderFish.png'
+import SliderMeat from '../images/sliderMeat.png'
+import SliderPancake from '../images/sliderPancake.png'
 
 export default class HomeSlider extends React.Component{
     render(){
@@ -22,16 +22,16 @@ export default class HomeSlider extends React.Component{
                 className='homeSlider'
                 play={true}
                 cancelOnInteraction={false}
-                interval={5000}
-                animation='openAnimation'
+                interval={4000}
+                animation='foldOutAnimation'
+                mobileTouch={true}
+                organicArrows= {false}
                 >
-
-                <div data-src={Slider5} />
-                <div data-src={Slider1} />
-                <div data-src={Slider2} />
-                <div data-src={Slider3} />
-                <div data-src={Slider4} />
-                
+                <div data-src={SliderDesk} />
+                <div data-src={SliderFish} />
+                <div data-src={SliderMeat} />
+                <div data-src={SliderPancake} />
+                <div data-src={SliderBe} />
             </AutoplaySlider>
         )
         return slider

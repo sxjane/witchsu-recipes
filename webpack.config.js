@@ -15,25 +15,21 @@ module.exports={
                 loader:'babel-loader'
             },
             {
-                test:/\.(png|jpe?g|gif)$/,
-                loader:'file-loader'
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
-            // {
-            //     test:/\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-            //     loader:'url-loader',
-            //     options:{
-            //         limit:10000
-            //     }
-            // },
             {
                 test: /\.(css)$/, 
                 use:['style-loader','css-loader']
             },
-
             {
                 test: /\.s[ac]ss$/i, 
                 use:['style-loader','css-loader','sass-loader']
-            }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
         ]
     },
     plugins:[

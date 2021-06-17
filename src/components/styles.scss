@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'XianErTi';
+    src: url('XianErTi.woff2') format('woff2'),
+        url('XianErTi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$primary-dark: #3b59a2;
+$primary-light: #72a6ff;
+$secondary-light:#d2a517;
+$secondary-dark:#A96E00;
+$third-light:#CE5820;
+$third-dark:#B86900;
+$white: #ffffff;
+$black-light: #303030;
+$black: #000000;
+$font-primary: sans-serif ;
+
+p{
+    color:$black-light;
+    font-size: large;
+    font-family: 'XianErTi', sans-serif;
+}
+
+/*App*/
+.menu_container{
+    // border: solid 1px blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_text{
+    // border: solid 1px blue;
+    flex:2;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size:large;
+}
+.menu_logo{
+    // border: solid 1px blue;
+    flex:1;
+    max-width: 220px;
+}
+.menu_search{
+    // border: solid 1px blue;
+    flex:1
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
+/*HomeSlider*/
+.homeSlider{
+    --slider-height-percentage:40%!important;
+    // --organic-arrow-height: 40px!important;
+    // --organic-arrow-thickness: 6px!important;
+    margin-bottom: 50px;
+}
+
+/*HomeText*/
+.homeText{  
+    background-color:white;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+
+
+.toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* border: solid 1px blue; */
+}
+.toolbar_child{
+    display:box
+}
+
+/*FoodOrder */
+.food_container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.food_image_container{
+    flex:1;
+    /* border: solid 1px blue; */
+}  
+
+
+/*FoodText*/
+.food_text_container{
+    /* border: solid 1px blue; */
+    flex:1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+}
+.foodText{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+}
+
+/*img*/
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%!important;
+    height:auto
+}
+
+h1, h2, h3{
+    font-weight: normal;
+}
