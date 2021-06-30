@@ -16,40 +16,49 @@ $third-dark:#B86900;
 $white: #ffffff;
 $black-light: #303030;
 $black: #000000;
-$font-primary: sans-serif ;
+$font-primary: "Noto Sans", "Noto Sans CJK SC", sans-serif;
 
+html {
+    font-size: 62.5%;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+}
 p{
     color:$black-light;
-    font-size: large;
-    font-family: 'XianErTi', sans-serif;
+    font-family: $font-primary;
+    letter-spacing: 5px;
 }
 
 /*App*/
 .menu_container{
-    // border: solid 1px blue;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 .menu_text{
-    // border: solid 1px blue;
-    flex:2;
+    flex:4;
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
-    font-size:large;
+    justify-content: space-around;
+    color: #000000;
+    font-size: 2.2rem;
 }
 .menu_logo{
-    // border: solid 1px blue;
     flex:1;
-    max-width: 220px;
+    text-align: left;
 }
-.menu_search{
-    // border: solid 1px blue;
-    flex:1
-}
+
 a:hover, a:visited, a:link, a:active{
     text-decoration: none;
+}
+
+/*Home*/
+.extraSpace{
+    height: 50px;
 }
 
 /*HomeSlider*/
@@ -57,18 +66,48 @@ a:hover, a:visited, a:link, a:active{
     --slider-height-percentage:40%!important;
     // --organic-arrow-height: 40px!important;
     // --organic-arrow-thickness: 6px!important;
-    margin-bottom: 50px;
+    // margin-bottom: 80px;
 }
 
-/*HomeText*/
-.homeText{  
-    background-color:white;
+/*DividerText*/
+.dividerContainer{  
+    margin-bottom: 3px;
+    font-size: 2.2rem;
+    border-radius:5%;  
+    font-style: italic;
+    text-align: center;     
+}
+.dividerText{
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color:#003797;
+}
+.dividerSu{
+    color:#003797;
+}
+
+/*HomeImgText*/
+.dishName{
+    font-family: 'XianErTi';
     text-align: center;
-    letter-spacing: 5px;
-    padding: 5px;
-    font-size: xx-large;
+    font-size: 2.5rem;
+    margin-bottom: -30px;
 }
-
+.homeImgTextContainer{
+    display: flex;
+    align-items: center;
+}
+.homePaperText{
+    // border: solid 1px blue;
+    flex:1.5;
+    font-size: 2rem;
+    line-height: 2;
+}
+.homeImg{
+    // border: solid 1px blue;
+    flex:1;
+}
 
 
 .toolbar{
@@ -82,32 +121,7 @@ a:hover, a:visited, a:link, a:active{
     display:box
 }
 
-/*FoodOrder */
-.food_container{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.food_image_container{
-    flex:1;
-    /* border: solid 1px blue; */
-}  
 
-
-/*FoodText*/
-.food_text_container{
-    /* border: solid 1px blue; */
-    flex:1 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: space-between;
-}
-.foodText{
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    text-align: center;
-}
 
 /*img*/
 img{

@@ -1,7 +1,29 @@
 import React from 'react'
 import HomeSlider from './HomeSlider'
-import HomeText from './HomeText'
+import HomeText from './DividerText'
 import './styles.scss'
+import HomeGroup from './HomeGroup'
+import G11 from '../images/g11.jpeg'
+import G12 from '../images/g12.jpeg'
+import G13 from '../images/g13.jpeg'
+import G14 from '../images/g14.jpeg'
+import G21 from '../images/g21.jpeg'
+import G22 from '../images/g22.jpeg'
+import G23 from '../images/g23.jpeg'
+import G24 from '../images/g24.jpeg'
+import Dish from '../images/chi1.png'
+import SHARE from '../share/text'
+import HomeImgText from './HomeDish'
+import HomeAlbum from './HomeAlbum'
+import dish1 from '../images/chi1.png'
+import dish2 from '../images/chi2.png'
+import dishWord1 from '../images/dishWord1.png'
+import dishWord2 from '../images/dishWord2.png'
+import food1 from '../images/food1.png'
+import food2 from '../images/food2.png'
+import food3 from '../images/food3.png'
+import food4 from '../images/food4.png'
+import { Share } from '@material-ui/icons'
 
 export default class Home extends React.Component{
     constructor(props){
@@ -12,19 +34,17 @@ export default class Home extends React.Component{
         const bodyElt = document.querySelector('body')
         bodyElt.style.backgroundColor = '#f8f5f1'
     }
-
     render(){
-        const sweetText1 = <p>“胃口是我们少数确切掌握的快乐。”，我仅仅想给大家带来一丝快乐，虽然最终快乐是用辛苦换来的，但这也是世间万物的最本质的运行原理。</p>
-        const sweetText2 = <p>做饭用心会观察到食物的点滴变化，往往这些细微变化是不能言语表达的，是食物和你的一种交流，你会爱上这种感觉的。</p>
-        const sweetText3 = <p>我觉得饮食是占据人生主要时间，目的以及结果的行为，饮食的态度就是一个人的意识形态，所以才有治大国如烹小鲜的说法。</p>
-        const sweetText4 = <p>饮食文化在我看来是一种贯通的行为文化，只是外衣有所不同。从饮食文化开始去了解西方文化，是一种很好的途经。You are what you eat!</p>
+        const groupIMG1 = {'G1':G11,'G2':G12,'G3':G13,'G4':G14}
+        const groupIMG2 = {'G1':G21,'G2':G22,'G3':G23,'G4':G24}
         return(
-            <div >
+            <div>
                 <HomeSlider />
-                <HomeText text={sweetText1}/>
-                <HomeText text={sweetText2}/>
-                <HomeText text={sweetText3}/>
-                <HomeText text={sweetText4}/>
+                <div className='extraSpace'/>
+                <HomeText text={SHARE.HOME_SWEET1} text2={SHARE.HOME_SWEET2}/>
+                <HomeImgText img1={dish1} img2={dish2} text={SHARE.HOME_DISH} title={SHARE.HOME_DISH_NAME}/>
+                <HomeImgText img1={food1} img2={food2} text={SHARE.HOME_SALAD} title={SHARE.HOME_SALAD_NAME}/>
+                <HomeText text={SHARE.HOME_SWEET3} text2={SHARE.HOME_SWEET3_MORE}/>
             </div> 
         )
     }

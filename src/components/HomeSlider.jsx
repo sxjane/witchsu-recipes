@@ -27,11 +27,11 @@ export default class HomeSlider extends React.Component{
                 mobileTouch={true}
                 organicArrows= {false}
                 >
-                <div data-src={SliderDesk} />
-                <div data-src={SliderFish} />
                 <div data-src={SliderMeat} />
+                <div data-src={SliderFish} />
                 <div data-src={SliderPancake} />
                 <div data-src={SliderBe} />
+                <div data-src={SliderDesk} />
             </AutoplaySlider>
         )
         return slider

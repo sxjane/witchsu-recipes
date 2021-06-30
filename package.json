@@ -1,5 +1,5 @@
 {
-  "name": "Susu Witch",
+  "name": "TheWonderfulWitchSu",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -14,6 +14,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
     "bootstrap": "^4.6.0",
+    "clsx": "^1.1.1",
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-awesome-slider": "^4.1.0",
