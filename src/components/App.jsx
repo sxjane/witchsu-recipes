@@ -17,12 +17,6 @@ export default class App extends React.Component{
         super(props)
 
     }
-    componentDidMount(){
-        const bodyElt = document.querySelector('body')
-        bodyElt.style.backgroundColor = '#f9fbfc'
-        // bodyElt.style.margin = 0
-        // bodyElt.style.padding = 0
-    }
 
     render(){
         return(
@@ -32,10 +26,9 @@ export default class App extends React.Component{
                         <div className='menu_logo'>
                             <Link to='/'><img src={Logo}/></Link>
                         </div>
-                        {/* <div className='menu_search'></div> */}
-                        <div className='menu_text'>
+                        <div className='menu_search'></div>
+                        <div className='menu_title'>
                             <Link to='/menu'><p>神奇菜谱</p></Link>
-                            <Link to='/blog'><p>用心回应</p></Link>
                             <Link to='/about'><p>女巫精灵</p></Link>
                         </div>
                     </div>

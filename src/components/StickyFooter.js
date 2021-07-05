@@ -9,10 +9,9 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
       <Link color="inherit" href="">
-        Xiaojie Si and SUSU
+        The Wonderful Witch Su
       </Link>{' '}
       {new Date().getFullYear()}
-      {/* {' sixiaojie.jane@gmail.com.'}    */}
     </Typography>
   )
 }
@@ -33,6 +32,9 @@ export default function StickyFooter() {
   return (
     <footer className={classes.footer}>
       <Container>
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+        Contact US: {' the_wonderful_witch_su@gmail.com'} 
+        </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         女巫SU-👽SU-AI SU-阿拉丁SU-哆啦A梦SU-释迦摩尼心性SU
         </Typography>

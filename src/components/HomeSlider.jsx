@@ -6,7 +6,6 @@ import 'react-awesome-slider/dist/styles.css'
 import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css'
 import './styles.scss'
 
-import SliderBe from '../images/sliderBe.png'
 import SliderDesk from '../images/sliderDesk.png'
 import SliderFish from '../images/sliderFish.png'
 import SliderMeat from '../images/sliderMeat.png'
@@ -19,19 +18,18 @@ export default class HomeSlider extends React.Component{
 
         const slider = (
             <AutoplaySlider
-                className='homeSlider'
+                className='home_slider'
                 play={true}
                 cancelOnInteraction={false}
-                interval={4000}
+                interval={2500}
                 animation='foldOutAnimation'
                 mobileTouch={true}
                 organicArrows= {false}
                 >
-                <div data-src={SliderMeat} />
-                <div data-src={SliderFish} />
-                <div data-src={SliderPancake} />
-                <div data-src={SliderBe} />
                 <div data-src={SliderDesk} />
+                <div data-src={SliderFish} />
+                <div data-src={SliderMeat} />
+                <div data-src={SliderPancake} />
             </AutoplaySlider>
         )
         return slider

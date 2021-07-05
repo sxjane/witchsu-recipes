@@ -24,11 +24,12 @@ html {
 body{
     margin-left: auto;
     margin-right: auto;
+    background-color: #f9fbfc;
 }
 p{
     color:$black-light;
     font-family: $font-primary;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
 }
 
 /*App*/
@@ -36,20 +37,24 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-.menu_text{
-    flex:4;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    color: #000000;
-    font-size: 2.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 .menu_logo{
     flex:1;
     text-align: left;
+}
+.menu_title{
+    flex:2;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    color: #000000;
+    font-size: clamp(1rem, 4vw, 2.5rem);;
+}
+.menu_search{
+    flex:1;
+    width: 1rem
 }
 
 a:hover, a:visited, a:link, a:active{
@@ -57,71 +62,55 @@ a:hover, a:visited, a:link, a:active{
 }
 
 /*Home*/
-.extraSpace{
-    height: 50px;
+.divider_space{
+    height: 5rem;
 }
 
 /*HomeSlider*/
-.homeSlider{
+.home_slider{
     --slider-height-percentage:40%!important;
-    // --organic-arrow-height: 40px!important;
-    // --organic-arrow-thickness: 6px!important;
-    // margin-bottom: 80px;
 }
 
 /*DividerText*/
-.dividerContainer{  
-    margin-bottom: 3px;
-    font-size: 2.2rem;
+.divider_container{  
+    margin-bottom: 0.3rem;
+    font-size: clamp(1rem, 2.5vw, 2.2rem);
     border-radius:5%;  
     font-style: italic;
     text-align: center;     
 }
-.dividerText{
-    line-height: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+.divider_text{
+    line-height: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     color:#003797;
 }
-.dividerSu{
+.divider_su{
     color:#003797;
 }
 
-/*HomeImgText*/
-.dishName{
-    font-family: 'XianErTi';
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: -30px;
-}
-.homeImgTextContainer{
+/*HomeDish*/
+.dish_container{
     display: flex;
     align-items: center;
 }
-.homePaperText{
-    // border: solid 1px blue;
-    flex:1.5;
-    font-size: 2rem;
-    line-height: 2;
-}
-.homeImg{
-    // border: solid 1px blue;
+.dish_img{
     flex:1;
 }
-
-
-.toolbar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    /* border: solid 1px blue; */
+.dish_main{
+    flex:1.5;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 2;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
 }
-.toolbar_child{
-    display:box
+.dish_name{
+    font-family: 'XianErTi';
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 3rem); 
+    margin-bottom: -1rem;
 }
-
-
 
 /*img*/
 img{
