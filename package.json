@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "client": "webpack --mode development --watch"
+    "client": "webpack --mode development --watch",
+    "deploy": "webpack --mode production"
   },
   "author": "Xiaojie Si",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
+    "argparse": "^2.0.1",
     "bootstrap": "^4.6.0",
     "clsx": "^1.1.1",
     "express": "^4.17.1",
