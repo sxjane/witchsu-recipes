@@ -26,7 +26,7 @@ let staticServer=new ExpressStaticS3({
     prefix:          STATIC_PREFIX
 });
 app.use(rewrite('/', INDEX_HTML))
-app.use(rewrite('/assets/:name', path.join(STATIC_PREFIX, ':name'))
+app.use(rewrite('/assets/:name', path.join(STATIC_PREFIX, ':name')))
 app.use(staticServer.express)
 
 app.listen(args.port, '0.0.0.0',()=>{
