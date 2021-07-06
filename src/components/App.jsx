@@ -33,7 +33,7 @@ export default class App extends React.Component{
                         </div>
                     </div>
                     <Switch>
-                        <Route exact path='/'>
+                        <Route exact path='/static/index.html'>
                             <Home />
                         </Route>
                     </Switch>
