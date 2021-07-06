@@ -6,30 +6,46 @@ module.exports={
     entry: path.join(__dirname, 'src','index.jsx'),
     output: {
         path: path.join(__dirname,'build'),
-        filename: 'index_bundle.js'
+        filename: 'index_bundle.js',
+        publicPath: 'assets/',
     },
     module:{
         rules:[
             {
                 test:/\.(js|jsx)$/,
                 exclude: /node_modules/,
-                loader:'babel-loader'
+                loader:'babel-loader',
+                generator: {
+                    publicPath: 'assets/',
+                },
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+                generator: {
+                    publicPath: 'assets/',
+                },
             },
             {
-                test: /\.(css)$/, 
-                use:['style-loader','css-loader']
+                test: /\.(css)$/,
+                use:['style-loader','css-loader'],
+                generator: {
+                    publicPath: 'assets/',
+                },
             },
             {
-                test: /\.s[ac]ss$/i, 
-                use:['style-loader','css-loader','sass-loader']
+                test: /\.s[ac]ss$/i,
+                use:['style-loader','css-loader','sass-loader'],
+                generator: {
+                    publicPath: 'assets/',
+                },
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
+                generator: {
+                    publicPath: 'assets/',
+                },
             },
         ]
     },
