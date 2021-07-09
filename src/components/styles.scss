@@ -84,8 +84,8 @@ a:hover, a:visited, a:link, a:active{
 }
 .divider_text{
     line-height: 3rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     color:#003797;
 }
 .divider_su{
@@ -105,6 +105,8 @@ a:hover, a:visited, a:link, a:active{
 .dish_img_container{
     display: flex;
     align-items: center;
+    padding-top: 5em;
+    padding-bottom: 3em;
 }
 .dish_img{
     flex:1;

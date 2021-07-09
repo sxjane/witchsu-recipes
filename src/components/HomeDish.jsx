@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeDishMain from './HomeDishMain'
+import HomeDishMainSm from './HomeDishMainSm'
 import Grid from '@material-ui/core/Grid'
 import './styles.scss'
 
@@ -23,15 +24,15 @@ export default class HomeImgText extends React.Component{
         }else{
             return(
                 <div className='dish_container_sm'>
-                    <div className='dish_img_container'>
+                    {/* <div className='dish_img_container'>
                         <div className='dish_img' >
                             <img src={this.props.img_left} />
                         </div>
                         <div className='dish_img' >
                             <img src={this.props.img_right} />
                         </div>
-                    </div>
-                    <HomeDishMain value={0} title={this.props.title} main={this.props.main} method={this.props.method}/>
+                    </div> */}
+                    <HomeDishMainSm value={0} title={this.props.title} main={this.props.main} method={this.props.method} img_left={this.props.img_left} img_right={this.props.img_right}/>
                 </div>
             )
             
