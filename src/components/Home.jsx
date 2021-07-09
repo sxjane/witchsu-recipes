@@ -23,19 +23,16 @@ import g23 from '../images/g23.jpeg'
 import g24 from '../images/g24.jpeg'
 
 export default class Home extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
-
+  
     render(){
+        console.log(this.props.width)
         return(
             <div>
                 <HomeSlider />
                 <div className='divider_space'/>
                 <HomeDivider philosophy={SHARE.HOME_SUSU_HAPPINESS} philosophy_more={SHARE.HOME_SUSU_HAPPINESS_MORE}/>
-                <HomeDish img_left={signature_dish_left} img_right={signature_dish_right} main={SHARE.HOME_DISH_CORE} title={SHARE.HOME_DISH_NAME} method={SHARE.HOME_DISH_METHOD}/>
-                <HomeDish img_left={latest_dish_left} img_right={latest_dish_right} main={SHARE.HOME_LATEST} title={SHARE.HOME_LATEST_NAME} method={SHARE.HOME_LATEST_METHOD}/>
+                <HomeDish width={this.props.width} img_left={signature_dish_left} img_right={signature_dish_right} main={SHARE.HOME_DISH_CORE} title={SHARE.HOME_DISH_NAME} method={SHARE.HOME_DISH_METHOD}/>
+                <HomeDish width = {this.props.width} img_left={latest_dish_left} img_right={latest_dish_right} main={SHARE.HOME_LATEST} title={SHARE.HOME_LATEST_NAME} method={SHARE.HOME_LATEST_METHOD}/>
                 <Divider name='好吃不胖之最佳组合' />
                 <HomeGroup G1={g11} G2={g12} G3={g13} G4={g14}/>
                 <Divider name='心满意足之最棒组合' />

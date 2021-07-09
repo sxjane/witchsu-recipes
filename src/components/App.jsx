@@ -3,6 +3,9 @@ import Home from './Home'
 import Footer from './StickyFooter'
 import Recipes from './Recipes'
 import Paper from '@material-ui/core/Paper'
+import Gallery from './Gallery'
+import WindowSize from './WindowSize'
+import { useState, useEffect } from 'react';
 
 import {
     BrowserRouter as Router,
@@ -36,7 +39,7 @@ export default class App extends React.Component{
                     </Paper>
                     <Switch>
                         <Route exact path='/'>
-                            <Home />
+                            <Home width={getWindowDimensions().width}/>
                         </Route>
                         <Route path='/menu'>
                             <Recipes />
@@ -49,3 +52,13 @@ export default class App extends React.Component{
         )
     }
 }
+
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+  

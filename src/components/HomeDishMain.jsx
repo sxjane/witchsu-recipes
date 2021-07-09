@@ -31,9 +31,8 @@ export default function RecipeReviewCard(props) {
     setExpanded(!expanded);
   };
 
-  console.log(props.method)
   return (
-    <Card elevation={0}>
+    <Card elevation={props.value}>
         <CardActions >
         <CardContent>
             <p className='dish_name'>{props.title}</p>
