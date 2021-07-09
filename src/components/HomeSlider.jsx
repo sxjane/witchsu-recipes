@@ -21,7 +21,7 @@ export default class HomeSlider extends React.Component{
                 className='home_slider'
                 play={true}
                 cancelOnInteraction={false}
-                interval={2500}
+                interval={4000}
                 animation='foldOutAnimation'
                 mobileTouch={true}
                 organicArrows= {false}

@@ -5,7 +5,7 @@ const { ArgumentParser } = require('argparse')
 const parser = new ArgumentParser({
     description: 'server process'
 })
-parser.add_argument('--port', { type: 'int' })
+parser.add_argument('--port', { type: 'int', default: 3000 })
 const args = parser.parse_args()
 
 const app = express()

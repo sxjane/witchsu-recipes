@@ -6,9 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './styles.scss'
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 const useStyles = makeStyles((theme) => ({
     expand: {
@@ -34,11 +34,10 @@ export default function RecipeReviewCard(props) {
   console.log(props.method)
   return (
     <Card elevation={0}>
+        <CardActions >
         <CardContent>
             <p className='dish_name'>{props.title}</p>
-            <p className='dish_main'>{props.main}</p>
-        </CardContent>
-        <CardActions >
+            <p className='dish_main'>{props.main}
             <IconButton
             className={clsx(classes.expand, {
                 [classes.expandOpen]: expanded,
@@ -47,12 +46,15 @@ export default function RecipeReviewCard(props) {
             aria-expanded={expanded}
             aria-label="show more"
             >
-                <ExpandMoreIcon />
+            <ExpandMoreIcon color='primary' style={{ fontSize: 35 }}/>
         </IconButton>
+      </p>
+      </CardContent>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-            <p>{props.method}</p>
+            {/* <p className='dish_main'>{props.more}</p> */}
+            <p className='dish_main'>{props.method}</p>
         </CardContent>
       </Collapse>
     </Card>

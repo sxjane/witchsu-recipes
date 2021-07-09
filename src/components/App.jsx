@@ -1,6 +1,8 @@
 import React from 'react'
 import Home from './Home'
 import Footer from './StickyFooter'
+import Recipes from './Recipes'
+import Paper from '@material-ui/core/Paper'
 
 import {
     BrowserRouter as Router,
@@ -22,7 +24,7 @@ export default class App extends React.Component{
         return(
             <div>
                 <Router>
-                    <div className='menu_container'>
+                    <Paper className='menu_container'>
                         <div className='menu_logo'>
                             <Link to='/'><img src={Logo}/></Link>
                         </div>
@@ -31,10 +33,13 @@ export default class App extends React.Component{
                             <Link to='/menu'><p>神奇菜谱</p></Link>
                             <Link to='/about'><p>女巫精灵</p></Link>
                         </div>
-                    </div>
+                    </Paper>
                     <Switch>
                         <Route exact path='/'>
                             <Home />
+                        </Route>
+                        <Route path='/menu'>
+                            <Recipes />
                         </Route>
                     </Switch>
                 </Router>

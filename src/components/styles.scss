@@ -1,15 +1,17 @@
 @font-face {
     font-family: 'XianErTi';
-    src: url('XianErTi.woff2') format('woff2'),
-        url('XianErTi.woff') format('woff');
+    src: url('XianErTi.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 $primary-dark: #3b59a2;
-$primary-light: #72a6ff;
-$secondary-light:#d2a517;
+$primary-background: #f9fbfc;
+$primary-lighter:#dcedf5;          
+$primary-light:#d6eefa;
+$primary-basic:#bae1f5;   
+$secondary-light:#eec12c;
 $secondary-dark:#A96E00;
 $third-light:#CE5820;
 $third-dark:#B86900;
@@ -22,9 +24,8 @@ html {
     font-size: 62.5%;
 }
 body{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f9fbfc;
+    background-color: $primary-background;
+    margin: auto;
 }
 p{
     color:$black-light;
@@ -38,6 +39,7 @@ p{
     justify-content: space-around;
     align-items: center;
     padding-top: 1rem;
+    margin:auto;
     padding-bottom: 0.5rem;
 }
 .menu_logo{
@@ -50,7 +52,7 @@ p{
     text-align: center;
     justify-content: space-around;
     color: #000000;
-    font-size: clamp(1rem, 4vw, 2.5rem);;
+    font-size: clamp(1rem, 4vw, 2.5rem);
 }
 .menu_search{
     flex:1;
@@ -63,7 +65,7 @@ a:hover, a:visited, a:link, a:active{
 
 /*Home*/
 .divider_space{
-    height: 5rem;
+    height: 10rem;
 }
 
 /*HomeSlider*/
@@ -73,8 +75,8 @@ a:hover, a:visited, a:link, a:active{
 
 /*DividerText*/
 .divider_container{  
-    margin-bottom: 0.3rem;
-    font-size: clamp(1rem, 2.5vw, 2.2rem);
+    margin-bottom: 10rem;
+    font-size: clamp(1rem, 2vw, 2.2rem);
     border-radius:5%;  
     font-style: italic;
     text-align: center;     
@@ -92,13 +94,14 @@ a:hover, a:visited, a:link, a:active{
 /*HomeDish*/
 .dish_container{
     display: flex;
-    align-items: center;
+    align-items:center;
+    margin-bottom: 10rem;
 }
 .dish_img{
     flex:1;
 }
 .dish_main{
-    flex:1.5;
+    flex:2;
     font-size: clamp(1rem, 2.5vw, 2rem);
     line-height: 2;
     padding-left: 1em;
@@ -108,10 +111,51 @@ a:hover, a:visited, a:link, a:active{
 .dish_name{
     font-family: 'XianErTi';
     text-align: center;
-    font-size: clamp(1rem, 4vw, 3rem); 
+    font-size: clamp(1rem, 4.5vw, 3.5rem); 
     margin-bottom: -1rem;
+}F
+
+/*Divider*/
+.divider_group{
+    text-align: center;
+    // padding-top: 5rem;
+}
+.divider_group_text{
+    font-family: 'XianErTi';
+    text-align: center;
+    font-size: clamp(1rem, 4.5vw, 3.5rem); 
 }
 
+/*home_group*/
+.home_group{
+    margin-bottom:10rem;
+    display:flex;
+    justify-self: center;
+    flex-direction: column;
+}
+
+/*home_withsu*/
+.home_witchsu_container{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10rem;
+    
+}
+.home_witchsu_img{
+    flex:1
+}
+.home_witchsu_main{
+    flex:1;
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    
+}
+
+.join_us{
+    margin-bottom: 10rem;
+    display:flex
+
+}
 /*img*/
 img{
     display:block;

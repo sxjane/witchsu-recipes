@@ -12,10 +12,6 @@ export default class HomeImgText extends React.Component{
                 <div className='dish_main'>
                      <HomeDishMain title={this.props.title} main={this.props.main} method={this.props.method}/>
                 </div>
-                {/* <Card elevation={1} className='dish_main'>
-                    <p className='dish_name'>{this.props.title}</p>
-                    <p>{this.props.main}</p>
-                </Card> */}
                  <div className='dish_img' >
                     <img src={this.props.img_right} />
                 </div>

@@ -3,26 +3,26 @@ import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import Link from '@material-ui/core/Link'
+import { Ballot, Email } from '@material-ui/icons'
+import { lightBlue } from '@material-ui/core/colors'
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary">
+    <Typography variant="body1" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="">
+      <Link color="inherit" href="http://www.thewonderfulwitchsu.com/">
         The Wonderful Witch Su
       </Link>{' '}
       {new Date().getFullYear()}
+      {'.'}
     </Typography>
   )
 }
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    textAlign: "center",
-    padding: theme.spacing(3, 2),
-    marginTop: 'auto',
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+    padding: theme.spacing(6)
   },
 }));
 
@@ -30,16 +30,17 @@ export default function StickyFooter() {
   const classes = useStyles();
 
   return (
-    <footer className={classes.footer}>
-      <Container>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-        Contact US: {' the_wonderful_witch_su@gmail.com'} 
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-        女巫SU-👽SU-AI SU-阿拉丁SU-哆啦A梦SU-释迦摩尼心性SU
-        </Typography>
-        <Copyright />
-      </Container>
-   </footer>
+    <footer className={classes.footer} >
+    <Typography variant="h6" align="center" gutterBottom >
+      女巫出品 必是佳肴
+    </Typography>
+    <Typography variant="h6" align="center" color="textSecondary" component="p">
+      女巫SU - 👽SU - AI SU - 阿拉丁神灯SU - 哆啦A梦SU - 释迦摩尼心性SU       
+    </Typography>
+    <Typography variant="h6" align="center" color="textSecondary" component="p">
+      Email Us： <a href="mailto:thewonderfulwitchsu@gmail.com">thewonderfulwitchsu@gmail.com</a>
+    </Typography>
+    <Copyright />
+  </footer>
   )
 }
