@@ -57,7 +57,7 @@ module.exports={
             favicon: path.join(__dirname, 'src/images','title.ico')
         }),
         new S3Plugin({
-            include: /.*\.(css|js|html|ico|woff|png|jpg)/,
+            include: /.*\.(css|js|html|ico|woff2|png|jpg|jpeg)/,
             s3Options: {
               accessKeyId: process.env.AWS_ACCESS_KEY_ID,
               secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
