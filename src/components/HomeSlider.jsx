@@ -6,10 +6,10 @@ import 'react-awesome-slider/dist/styles.css'
 import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css'
 import './styles.scss'
 
-import SliderDesk from '../images/sliderDesk.jpeg'
-import SliderFish from '../images/sliderFish.jpeg'
-import SliderMeat from '../images/sliderMeat.jpeg'
-import SliderPancake from '../images/sliderPancake.jpeg'
+import SliderDesk from '../../images/sliderDesk.jpeg'
+import SliderFish from '../../images/sliderFish.jpeg'
+import SliderMeat from '../../images/sliderMeat.jpeg'
+import SliderPancake from '../../images/sliderPancake.jpeg'
 
 export default class HomeSlider extends React.Component{
     render(){

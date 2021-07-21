@@ -1,5 +1,5 @@
 import React from 'react'
-import DeskFlower from '../images/DeskFlower.jpeg'
+import DeskFlower from '../../images/DeskFlower.jpeg'
 import Paper from '@material-ui/core/Paper'
 
 export default class HomeWitchSu extends React.Component{

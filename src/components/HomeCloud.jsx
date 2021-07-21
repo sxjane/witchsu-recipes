@@ -1,7 +1,7 @@
 import React from 'react'
-import DeskFlower from '../images/DeskFlower.jpeg'
+import DeskFlower from '../../images/DeskFlower.jpeg'
 import Paper from '@material-ui/core/Paper'
-import cloud from '../images/cloud.jpeg'
+import cloud from '../../images/cloud.jpeg'
 
 export default class HomeWitchSu extends React.Component{
     render(){

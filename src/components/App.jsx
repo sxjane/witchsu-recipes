@@ -14,7 +14,7 @@ import {
     Link
 } from 'react-router-dom'
 
-import Logo from '../images/Logo.png'
+import Logo from '../../images/Logo.png'
 import './styles.scss'
 
 export default class App extends React.Component{

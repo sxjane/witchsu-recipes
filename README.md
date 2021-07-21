@@ -1,4 +1,3 @@
-
 To run it 
 * in the terminal **npm run client** to start the client 
 * in the terminal **npm run start** start the server on Port:3000

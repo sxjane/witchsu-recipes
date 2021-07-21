@@ -1,4 +1,6 @@
-build
+assets
 node_modules
-src/images
+images
 src/components/no
+.vscode
+todo.txt
