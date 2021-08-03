@@ -42,6 +42,13 @@ else {
     app.use(STATIC_PREFIX, express.static(STATIC_DIR))
 }
 
+//data
+const names = require('./server/nameList')
+
+// //routes
+
+// app.use(rewrite('/download/:name', '/assets/:name'))
+
 app.listen(args.port, '0.0.0.0',()=>{
     console.log('production or not:',args.production)
     console.log('Server is on the port:', args.port)

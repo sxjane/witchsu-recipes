@@ -52,7 +52,6 @@ export default function RecipeReviewCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-            {/* <p className='dish_main'>{props.more}</p> */}
             <p className='dish_main'>{props.method}</p>
         </CardContent>
       </Collapse>

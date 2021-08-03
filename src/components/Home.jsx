@@ -31,11 +31,11 @@ export default class Home extends React.Component{
                 <HomeSlider />
                 <div className='divider_space'/>
                 <HomeDivider philosophy={SHARE.HOME_SUSU_HAPPINESS} philosophy_more={SHARE.HOME_SUSU_HAPPINESS_MORE}/>
-                <HomeDish width={this.props.width} img_left={signature_dish_left} img_right={signature_dish_right} main={SHARE.HOME_DISH_CORE} title={SHARE.HOME_DISH_NAME} method={SHARE.HOME_DISH_METHOD}/>
+                <HomeDish width={this.props.width} img_left={signature_dish_left} img_right={signature_dish_right} main={SHARE.HOME_DISH} title={SHARE.HOME_DISH_NAME} method={SHARE.HOME_DISH_METHOD}/>
                 <HomeDish width = {this.props.width} img_left={latest_dish_left} img_right={latest_dish_right} main={SHARE.HOME_LATEST} title={SHARE.HOME_LATEST_NAME} method={SHARE.HOME_LATEST_METHOD}/>
-                <Divider name='好吃不胖之最佳组合' />
+                <Divider name={SHARE.HOME_GROUP_NAME1} />
                 <HomeGroup G1={g11} G2={g12} G3={g13} G4={g14}/>
-                <Divider name='心满意足之最棒组合' />
+                <Divider name={SHARE.HOME_GROUP_NAME2} />
                 <HomeGroup G1={g21} G2={g22} G3={g23} G4={g24}/>
                 <Divider name='女巫本巫'/>
                 <HomeWitchSu />

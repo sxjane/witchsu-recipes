@@ -82,7 +82,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="medium" color="primary">
-                      查看菜谱
+                      <a href='/assets/glory_muffin.jpeg' download>查看菜谱</a>
                     </Button>
                   </CardActions>
                 </Card>

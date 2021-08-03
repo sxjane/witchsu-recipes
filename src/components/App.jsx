@@ -3,9 +3,6 @@ import Home from './Home'
 import Footer from './StickyFooter'
 import Recipes from './Recipes'
 import Paper from '@material-ui/core/Paper'
-import Gallery from './Gallery'
-import WindowSize from './WindowSize'
-import { useState, useEffect } from 'react';
 
 import {
     BrowserRouter as Router,
@@ -18,11 +15,6 @@ import Logo from '../../images/Logo.png'
 import './styles.scss'
 
 export default class App extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
-
     render(){
         return(
             <div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import DeskFlower from '../../images/DeskFlower.jpeg'
 import Paper from '@material-ui/core/Paper'
 import cloud from '../../images/cloud.jpeg'
 

@@ -2,6 +2,7 @@ const path = require('path')
 const html_webpack_plugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const S3Plugin = require('webpack-s3-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports={
     entry: path.join(__dirname, 'src', 'index.jsx'),
@@ -56,6 +57,11 @@ module.exports={
         new html_webpack_plugin({
             template: path.join(__dirname, 'src', 'index.html'),
             favicon: path.join(__dirname, 'images','title.ico')
+        }),
+        new CopyPlugin({
+            patterns:[
+                {from:path.join(__dirname, 'images', 'recipes'), to: path.join(__dirname, 'assets')}
+            ]
         }),
         // new S3Plugin({
         //     include: /.*\.(css|js|html|ico|woff2|png|jpg|jpeg)/,
