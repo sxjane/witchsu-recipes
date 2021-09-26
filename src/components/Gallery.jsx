@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FrameLayout } from "@egjs/react-infinitegrid";
 
-import pancake from '../../images/g11.jpeg'
+import pancake from '../../images/homepage/g11.jpeg'
 
 function getItems(nextGroupKey, nextKey, count) {
     const nextItems = [];

@@ -5,27 +5,26 @@ import './styles.scss'
 import SHARE from '../../share/text'
 import HomeDish from './HomeDish'
 import HomeWitchSu from './HomeWitchSu'
-import signature_dish_left from '../../images/signature_dish_left.png'
-import signature_dish_right from '../../images/signature_dish_right.png'
-import latest_dish_left from '../../images/latest_dish_left.png'
-import latest_dish_right from '../../images/latest_dish_right.png'
+import signature_dish_left from '../../images/homepage/signature_dish_left.png'
+import signature_dish_right from '../../images/homepage/signature_dish_right.png'
+import latest_dish_left from '../../images/homepage/latest_dish_left.png'
+import latest_dish_right from '../../images/homepage/latest_dish_right.png'
 import HomeGroup from './HomeGroup'
 import Divider from './Divider'
 import HomeCloud from './HomeCloud'
 import JoinUs from './HomeJoinUs'
-import g11 from '../../images/g11.jpeg'
-import g12 from '../../images/g12.jpeg'
-import g13 from '../../images/g13.jpeg'
-import g14 from '../../images/g14.jpeg'
-import g21 from '../../images/g21.jpeg'
-import g22 from '../../images/g22.jpeg'
-import g23 from '../../images/g23.jpeg'
-import g24 from '../../images/g24.jpeg'
+import g11 from '../../images/homepage/g11.jpeg'
+import g12 from '../../images/homepage/g12.jpeg'
+import g13 from '../../images/homepage/g13.jpeg'
+import g14 from '../../images/homepage/g14.jpeg'
+import g21 from '../../images/homepage/g21.jpeg'
+import g22 from '../../images/homepage/g22.jpeg'
+import g23 from '../../images/homepage/g23.jpeg'
+import g24 from '../../images/homepage/g24.jpeg'
 
 export default class Home extends React.Component{
   
     render(){
-        console.log(this.props.width)
         return(
             <div>
                 <HomeSlider />
@@ -44,7 +43,6 @@ export default class Home extends React.Component{
                 <Divider name='加入我们'/>
                 <JoinUs />
                 <HomeDivider philosophy={SHARE.HOME_SUSU_CULTURE} philosophy_more={SHARE.HOME_SUSU_CULTURE_MORE}/>
-                
             </div> 
         )
     }

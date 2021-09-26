@@ -1,56 +1,42 @@
-import React from 'react'
-import Home from './Home'
+import React, {useState, useEffect} from 'react'
+
+import RouteDesktop from './RouteDesktop'
+import RoutePhone from './RoutePhone'
 import Footer from './StickyFooter'
-import Recipes from './Recipes'
-import Paper from '@material-ui/core/Paper'
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from 'react-router-dom'
+import axios from 'axios'
 
-import Logo from '../../images/Logo.png'
-import './styles.scss'
+export default function App(){
+    const [phone, setPhone] = useState(true)
+    const [names, setNames] = useState([])
+    const [recipes, setRecipes] = useState([])
+    const [cards, setCards] = useState([])
 
-export default class App extends React.Component{
-    render(){
-        return(
-            <div>
-                <Router>
-                    <Paper className='menu_container'>
-                        <div className='menu_logo'>
-                            <Link to='/'><img src={Logo}/></Link>
-                        </div>
-                        <div className='menu_search'></div>
-                        <div className='menu_title'>
-                            <Link to='/menu'><p>神奇菜谱</p></Link>
-                            <Link to='/about'><p>女巫精灵</p></Link>
-                        </div>
-                    </Paper>
-                    <Switch>
-                        <Route exact path='/'>
-                            <Home width={getWindowDimensions().width}/>
-                        </Route>
-                        <Route path='/menu'>
-                            <Recipes />
-                        </Route>
-                    </Switch>
-                </Router>
-                <Footer />
-            </div>
-            
-        )
-    }
+    useEffect(()=>{
+        window.innerWidth < 800? setPhone(true):setPhone(false)
+        const fetchData = async()=>{
+            try{
+                const response = await axios.get('/assets/photos/all.txt')
+                setRecipes(response.data)
+                var names = []
+                for(let item of response.data){
+                    names.push(item.name)
+                }
+                setNames(names)
+                const cards_result = await axios.get('/assets/photos/recipes.txt')
+                setCards(cards_result.data)
+            }catch(error){
+                console.log(error)
+            }
+        }
+        fetchData()
+    },[])
+
+    return(
+        <div>
+            {!phone && <RouteDesktop recipes={recipes} names={names} cards={cards} />}
+            {phone && <RoutePhone recipes={recipes} names={names} cards={cards} />}
+            <Footer />
+        </div>
+    )
 }
-
-
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
-  }
-  

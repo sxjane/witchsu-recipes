@@ -1,6 +1,6 @@
 import React from 'react'
 import Paper from '@material-ui/core/Paper'
-import cloud from '../../images/cloud.jpeg'
+import cloud from '../../images/homepage/cloud.jpeg'
 
 export default class HomeWitchSu extends React.Component{
     render(){

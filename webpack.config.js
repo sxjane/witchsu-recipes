@@ -60,7 +60,8 @@ module.exports={
         }),
         new CopyPlugin({
             patterns:[
-                {from:path.join(__dirname, 'images', 'recipes'), to: path.join(__dirname, 'assets')}
+                {from:path.join(__dirname, 'images', 'recipes'), to: path.join(__dirname, 'assets','recipes')},
+                {from:path.join(__dirname, 'images', 'photos'), to: path.join(__dirname, 'assets','photos')}
             ]
         }),
         // new S3Plugin({

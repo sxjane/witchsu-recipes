@@ -1,5 +1,5 @@
 import React from 'react'
-import joinUs from '../../images/joinus.jpeg'
+import joinUs from '../../images/homepage/joinus.jpeg'
 import Paper from '@material-ui/core/Paper'
 
 export default class HomeJoinUs extends React.Component{

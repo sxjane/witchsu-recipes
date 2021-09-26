@@ -31,10 +31,9 @@ export default function MediaCard(props) {
         <CardMedia
           className={classes.media}
           image={props.img}
-          title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h4" component="h2">
+          <Typography gutterBottom variant="h4" component="h4">
             {props.name}
           </Typography>
           <Typography variant="body1" color="textSecondary" component="p">

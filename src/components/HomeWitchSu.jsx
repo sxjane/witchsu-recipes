@@ -1,5 +1,5 @@
 import React from 'react'
-import DeskFlower from '../../images/DeskFlower.jpeg'
+import SU from '../../images/homepage/su.jpeg'
 import Paper from '@material-ui/core/Paper'
 
 export default class HomeWitchSu extends React.Component{
@@ -7,7 +7,7 @@ export default class HomeWitchSu extends React.Component{
         return (
             <Paper className='home_witchsu_container'>
                 <div className='home_witchsu_img'>
-                    <img src={DeskFlower} />
+                    <img src={SU} />
                 </div>
                 <div className='home_witchsu_main'>
                     <div>

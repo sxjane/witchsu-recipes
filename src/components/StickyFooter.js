@@ -8,14 +8,25 @@ import { lightBlue } from '@material-ui/core/colors'
 
 function Copyright() {
   return (
-    <Typography variant="body1" color="textSecondary" align="center">
+    <div>
+      <Typography variant="body1" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="http://www.thewonderfulwitchsu.com/">
-        The Wonderful Witch Su
+        The Wonderful Witch Su Organization
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
-    </Typography>
+      </Typography>
+      <Typography variant="body1" color="textSecondary" align="center">
+        Content Provider: Jing Su
+      </Typography>
+      <Typography variant="body1" color="textSecondary" align="center">
+        Designers: Lingyun Wei and Xiaojie Si
+      </Typography>
+      <Typography variant="body1" color="textSecondary" align="center">
+        Developer: By Xiaojie Si
+      </Typography>
+    </div>
   )
 }
 

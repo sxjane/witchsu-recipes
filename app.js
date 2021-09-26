@@ -26,6 +26,8 @@ const STATIC_DIR = path.join(__dirname, 'assets')
 const STATIC_PREFIX = '/assets'
 const INDEX_HTML = path.join(STATIC_PREFIX, 'index.html')
 app.use(rewrite('/', INDEX_HTML))
+app.use(rewrite('/menu', INDEX_HTML))
+app.use(rewrite('/about', INDEX_HTML))
 
 
 //production or not
@@ -42,8 +44,8 @@ else {
     app.use(STATIC_PREFIX, express.static(STATIC_DIR))
 }
 
-//data
-const names = require('./server/nameList')
+// //data
+// const names = require('./src/utilities/nameList')
 
 // //routes
 

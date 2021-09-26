@@ -6,7 +6,7 @@ import './styles.scss'
 export default class HomeImgText extends React.Component{
 
     render(){
-        if(this.props.width > 800){
+        if(!this.props.width){
             return(
                 <div className='dish_container'>
                     <div className='dish_img' >
