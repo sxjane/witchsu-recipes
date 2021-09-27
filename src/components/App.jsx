@@ -14,22 +14,19 @@ export default function App(){
 
     useEffect(()=>{
         window.innerWidth < 800? setPhone(true):setPhone(false)
-        const fetchData = async()=>{
+        const getRecipes = async()=>{
             try{
-                const response = await axios.get('/assets/photos/all.txt')
-                setRecipes(response.data)
-                var names = []
-                for(let item of response.data){
-                    names.push(item.name)
-                }
+                const response = await axios.get('/allRecipes')
+                let {classRecipes,names, recipes} = response.data
                 setNames(names)
-                const cards_result = await axios.get('/assets/photos/recipes.txt')
-                setCards(cards_result.data)
+                setRecipes(recipes)
+                setCards(classRecipes)
+                console.log(classRecipes)
             }catch(error){
                 console.log(error)
             }
         }
-        fetchData()
+        getRecipes()
     },[])
 
     return(

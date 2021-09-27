@@ -6,7 +6,11 @@ import './styles.scss'
 export default function RecipesByClass(props) {
   const {cards} = props
   
-  if(!cards.length) return null
+  if(!cards.length) return (
+    <div>
+      <h4>Loading</h4>
+    </div>
+  )
   return(
       <Container maxWidth='xl'>
         {cards.map(card => (

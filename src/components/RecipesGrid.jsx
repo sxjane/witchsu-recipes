@@ -33,16 +33,14 @@ export default function RecipesGrid(props){
                     className={classes.cardMedia}
                     image={pathImg.concat(item.name,photoForm)}
                     title={item.name}/>
-                    <CardContent className={classes.cardContent}>
-                        <h3>{item.name}</h3>
-                        <h4>{item.country.concat(' ', item.method)}</h4>
-                    </CardContent>
                     <CardActions>
                         <Button variant='outlined' color='primary'>
-                        <h5><a href={pathRecipes.concat(item.name, photoForm)} download/>菜谱</h5>
-                        <h5><a href={pathRecipes.concat(item.name,'.jpeg')} download>菜谱</a></h5>
+                        <a href={pathRecipes.concat(item.name, photoForm)} download><h4>{item.name}</h4></a>
                         </Button>
-                    </CardActions>
+                    </CardActions><CardContent className={classes.cardContent}>
+                        <h4>{item.country.concat(' ', item.method)}</h4>
+                    </CardContent>
+                    
                 </Card>
             </Grid>
             ))}
