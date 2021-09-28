@@ -8,6 +8,7 @@ const morgan = require('morgan')
 
 const {MongoClient} = require('mongodb')
 const {recipesByClass, searchRecipes} = require('./db/recipes')
+const { default: SelectInput } = require('@material-ui/core/Select/SelectInput')
 
 //command line arguments
 const parser = new ArgumentParser({
@@ -47,27 +48,28 @@ else {
     app.use(STATIC_PREFIX, express.static(STATIC_DIR))
 }
 
-//dababase setting 
+//database setting 
 const uri = 'mongodb+srv://witchsusu:witchsusu@clustersi.jw61m.mongodb.net/'
 const client = new MongoClient(uri)
 const dbName = 'recipes'
 const collName = 'basic'
-
-//app route 
-app.get('/allRecipes',async (req,res)=>{
-    var classRecipes = []
-    var names = []
-    var recipes = []
+var classRecipes, names, recipes
+const getRecipes = async ()=>{
     try{
         classRecipes= await recipesByClass(client,dbName,collName)
         const result = await searchRecipes(client,dbName,collName)
         names = result.names
         recipes = result.recipes
+        console.log('GetRecipes is done')
     }catch(error){
         console.log(error)
-    }finally{
-        res.send({classRecipes, names,recipes})
     }
+}
+getRecipes()
+
+//app route 
+app.get('/allRecipes',async (req,res)=>{
+    res.send({classRecipes, names, recipes})
 })
 
 app.listen(args.port, '0.0.0.0',()=>{

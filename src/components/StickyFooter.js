@@ -1,10 +1,8 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/core/styles'
-import Container from '@material-ui/core/Container'
-import Link from '@material-ui/core/Link'
-import { Ballot, Email } from '@material-ui/icons'
-import { lightBlue } from '@material-ui/core/colors'
+import Typography from '@mui/material/Typography'
+import Link from '@mui/material/Link'
+import Box from '@mui/material/Box';
+
 
 function Copyright() {
   return (
@@ -18,40 +16,31 @@ function Copyright() {
       {'.'}
       </Typography>
       <Typography variant="body1" color="textSecondary" align="center">
-        Content Provider: Jing Su
+        Recipes from Jing Su
       </Typography>
       <Typography variant="body1" color="textSecondary" align="center">
-        Designers: Lingyun Wei and Xiaojie Si
+        Designed by Lingyun Wei and Xiaojie Si
       </Typography>
       <Typography variant="body1" color="textSecondary" align="center">
-        Developer: By Xiaojie Si
+        Developed by Xiaojie Si
       </Typography>
     </div>
   )
 }
 
-const useStyles = makeStyles((theme) => ({
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6)
-  },
-}));
-
 export default function StickyFooter() {
-  const classes = useStyles();
-
   return (
-    <footer className={classes.footer} >
-    <Typography variant="h6" align="center" gutterBottom >
+    <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+    <Typography variant="h5" align="center" gutterBottom >
       女巫出品 必是佳肴
     </Typography>
-    <Typography variant="h6" align="center" color="textSecondary" component="p">
+    <Typography variant="body1" align="center" color="textSecondary" component="p">
       女巫SU - 👽SU - AI SU - 阿拉丁神灯SU - 哆啦A梦SU - 释迦摩尼心性SU       
     </Typography>
-    <Typography variant="h6" align="center" color="textSecondary" component="p">
-      Email Us： <a href="mailto:thewonderfulwitchsu@gmail.com">thewonderfulwitchsu@gmail.com</a>
+    <Typography variant="body1" align="center" color="textSecondary" component="p">
+      Email Us： <a style={{textDecoration:'underline', color:'#003797'}}href="mailto:thewonderfulwitchsu@gmail.com">thewonderfulwitchsu@gmail.com</a>
     </Typography>
     <Copyright />
-  </footer>
+  </Box>
   )
 }

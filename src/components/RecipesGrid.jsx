@@ -27,7 +27,7 @@ export default function RecipesGrid(props){
     return(
         <Grid container spacing={3}>
             {list.map(item=>(
-            <Grid item key={item.name} xs={12} sm={6} md={4} lg={3} xl={2}>
+            <Grid item key={item.name} xs={12} sm={6} md={4} lg={3}>
                 <Card className={classes.card}>
                     <CardMedia 
                     className={classes.cardMedia}

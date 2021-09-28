@@ -21,7 +21,6 @@ export default function App(){
                 setNames(names)
                 setRecipes(recipes)
                 setCards(classRecipes)
-                console.log(classRecipes)
             }catch(error){
                 console.log(error)
             }

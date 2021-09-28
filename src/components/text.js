@@ -1,8 +1,8 @@
 module.exports = {
-    HOME_SUSU_HAPPINESS: '“胃口是我们少数确切掌握的快乐。”，我仅仅想给大家带来一丝快乐。',
-    HOME_SUSU_HAPPINESS_MORE: '虽然最终快乐是用辛苦换来的，但这也是世间万物的最本质的运行原理。',
-    HOME_SUSU_CULTURE: '从饮食文化开始去了解西方文化，是一种很好的途经。',
-    HOME_SUSU_CULTURE_MORE: 'You are what you eat',
+    DIVIDER_TEXT1: '“胃口是我们少数确切掌握的快乐。”，我仅仅想给大家带来一丝快乐。',
+    DIVIDER_TEXT11: '虽然最终快乐是用辛苦换来的，但这也是世间万物的最本质的运行原理。',
+    DIVIDER_TEXT2: '从饮食文化开始去了解西方文化，是一种很好的途经。',
+    DIVIDER_TEXT22: 'You are what you eat',
 
     HOME_DISH_NAME:'招牌菜之黄金鸡腿',
     HOME_DISH:'Signature dish对于我来说, 它代表的不是菜品的完美,而是一个人内心世界的演绎，心灵的深处对事物所追求的那个元素；是一个个体意识形态的体现，这个Signature代表我的原始动力：给家人做顿饭，一顿赏心悦目的饭，一天的好心情。这就是我的Signature，没有特别，只有平实；够的着的食材，细微的观察；好吃、有趣；像小学生的作文一样，还没来得及被华丽的辞藻俘虏，多了一丝的纯粹。',
