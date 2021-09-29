@@ -15,7 +15,8 @@ const ExpandMore = styled((props) => {
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
+  color:'#003797',
+  paddingLeft:'2rem',
   transition: theme.transitions.create('transform', {
     duration: theme.transitions.duration.shortest,
   }),
@@ -40,43 +41,14 @@ export default function FavDish(props){
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <ExpandMoreIcon sx={{width:'2.5rem',height:'2.5rem'}}/>
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <h4>{props.method}</h4>
+          <h3 className='dish_content'>{props.method}</h3>
         </CardContent>
       </Collapse>
     </Card>
   )
 }
-
-// export default function FavDish(props) {
-
-//   return (
-//     <Card elevation={props.paper}>
-//         <CardActions >
-//         <CardContent>
-//           <h2 style={{color:'#003797'}}>{props.name}</h2>
-//           <h2>{props.text}</h2>
-//           <IconButton
-//           className={clsx(classes.expand, {
-//               [classes.expandOpen]: expanded,
-//           })}
-//           onClick={handleExpandClick}
-//           aria-expanded={expanded}
-//           aria-label="show more"
-//           >
-//           <ExpandMoreIcon color='primary' style={{ fontSize: 35 }}/>
-//       </IconButton>
-//       </CardContent>
-//       </CardActions>
-//       <Collapse in={expanded} timeout="auto" unmountOnExit>
-//         <CardContent>
-//             <p className='dish_main'>{props.method}</p>
-//         </CardContent>
-//       </Collapse>
-//     </Card>
-//   );
-// }

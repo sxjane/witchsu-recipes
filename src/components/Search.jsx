@@ -9,11 +9,8 @@ export default function SearchBar(props){
         }
     })
     return (
-        <div style={{marginTop:'2rem'}}>
+        <div style={{margin:'2rem'}}>
             <RecipesGrid list={filteredRecipes} />  
         </div>
-          
-     
-        
     )
 }
