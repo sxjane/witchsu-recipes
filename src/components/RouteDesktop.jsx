@@ -20,7 +20,8 @@ import susu from '../../images/logo.png'
 import './styles.scss'
 
 export default function RouteDesktop(props){
-    const names = props? props.names: []
+    const names = props? props.names: ['请再刷新一次吧']
+    console.log('names:',names)
     const {recipes, cards} = props
     const [input, setInput] = useState('')
     return(

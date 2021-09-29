@@ -24,7 +24,6 @@ a:hover, a:visited, a:link, a:active{
 }
 
 p{
-    color:$black-light;
     font-family: $font-primary;
 }
 .font_basic{
@@ -33,6 +32,7 @@ p{
     padding: 0;
     margin: 0;
     font-weight: normal;
+    letter-spacing: 0.15rem;
 }
 h1{
     @extend .font_basic;
@@ -110,15 +110,15 @@ img{
 /*****DividerSusu********/
 
 .divider_text{
-    margin-bottom: 5rem;
-    margin-top:6rem;
+    margin-bottom: 10rem;
+    margin-top:9rem;
     font-style: italic;
     text-align: center;
     line-height: 2;
     padding-left: 2rem;
     padding-right: 2rem;
     color:$fav-blue;
-    letter-spacing: 0.3rem; 
+    letter-spacing: 0.2rem; 
 }
 
 /*******HomeDish******/
@@ -146,15 +146,20 @@ img{
 .dish_content{
     line-height: 1.8;
     text-align: justify;
-    letter-spacing: 0.2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    color:$black-light
 }
 
 /*home_group*/
+.home_group_title{
+    text-align: center;
+    color:$fav-blue;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+}
 .home_group{
-    margin-bottom:10rem;
+    margin-bottom:9rem;
     display:flex;
     justify-self: center;
     flex-direction: column;
