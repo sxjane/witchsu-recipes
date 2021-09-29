@@ -1,6 +1,4 @@
 import React from 'react'
 export default function DividerSusu(props){
-    return <h2 className='divider_text'>{props.text}</h2>
-    
-    
+    return <h3 className='divider_text'>{props.text}</h3>
 }

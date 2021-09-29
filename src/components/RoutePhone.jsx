@@ -78,7 +78,7 @@ export default function PhoneBar(props) {
               sx={{mx:'5rem'}} 
               onClick={handleClose}>
                 <Link to='/recipes'>
-                  <h2>分类菜谱</h2>
+                  <h3>分类菜谱</h3>
                 </Link>
             </MenuItem>
             <Divider />
@@ -86,7 +86,7 @@ export default function PhoneBar(props) {
               sx={{mx:'5rem'}} 
               onClick={handleClose}>
                 <Link to='/about'>
-                  <h2>自由集市</h2>
+                  <h3>自由集市</h3>
                 </Link>
             </MenuItem>
         </Menu>

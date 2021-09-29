@@ -3,7 +3,6 @@ $black-light: #303030;
 $primary-background: #f9fbfc;
 $fav-blue: #003797;
 
-
 html, body {
     position: relative;
     margin: 0;
@@ -20,45 +19,37 @@ a {
     color: unset;
     text-decoration: none;
 }
-
 a:hover, a:visited, a:link, a:active{
     text-decoration: none;
 }
 
-
 p{
     color:$black-light;
     font-family: $font-primary;
-    letter-spacing: 0.5rem;
 }
-
 .font_basic{
     font-family: $font-primary;
     color: #000000;
-    letter-spacing: 0.1rem;
     padding: 0;
     margin: 0;
     font-weight: normal;
 }
-
 h1{
     @extend .font_basic;
-    font-size: clamp(0.6rem, 8vw, 2rem);
+    font-size: clamp(1rem, 8vw, 2rem);
 }
 h2{
     @extend .font_basic;
-    font-size: clamp(0.6rem, 7vw, 1.5rem);
-    margin-bottom: 0.5rem;
-    margin-top: 1.2rem;
+    font-size: clamp(1rem, 7vw, 1.5rem);
     font-weight: 500;
 }
 h3{
     @extend .font_basic;
-    font-size: clamp(0.6rem, 6vw ,1.3rem);
+    font-size: clamp(1rem, 5vw ,1.3rem);
 }
 h4{
     @extend .font_basic;
-    font-size: clamp(0.6rem, 4vw, 1rem) 
+    font-size: clamp(1rem, 4vw, 1rem) 
 }
 h5{
     @extend .font_basic;
@@ -105,7 +96,7 @@ img{
     justify-content: space-around;
 }
 .phone_title{
-    flex:0.5
+    flex:0.2
 }
 
 /******HomeSlider********/
@@ -123,9 +114,9 @@ img{
     margin-top:6rem;
     font-style: italic;
     text-align: center;
-    line-height: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    line-height: 2;
+    padding-left: 2rem;
+    padding-right: 2rem;
     color:$fav-blue;
     letter-spacing: 0.3rem; 
 }
@@ -135,6 +126,8 @@ img{
     display: flex;
     align-items:center;
     margin-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right:5rem;
 }
 .phone_dish_container{
     display:flex;
@@ -142,16 +135,21 @@ img{
     margin-bottom: 5rem;
 }
 .dish_img{
-    flex:1;
-    padding-bottom: 1rem;
+    flex:0.8;
 }
 .dish_main{
-    flex:2;
-    line-height: 2;
-    padding-left: 1em;
-    padding-right: 1em;
+    flex:2.2;
+}
+
+
+/******FavDish******/
+.dish_content{
+    line-height: 1.8;
     text-align: justify;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color:$black-light
 }
 
 /*home_group*/

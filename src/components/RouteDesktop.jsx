@@ -31,8 +31,8 @@ export default function RouteDesktop(props){
                 </div>
                 <div className='desktop_space'></div>
                 <div className='desktop_title'>
-                    <Link to='/recipes'><h2>分类菜谱</h2></Link>
-                    <Link to='/about'><h2>自由集市</h2></Link>
+                    <Link to='/recipes'><h3>分类菜谱</h3></Link>
+                    <Link to='/about'><h3>自由集市</h3></Link>
                 </div>
                 <div className='desktop_search'>
                     <Link to='/search'>
