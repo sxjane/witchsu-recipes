@@ -6,16 +6,16 @@ import 'react-awesome-slider/dist/styles.css'
 import 'react-awesome-slider/dist/custom-animations/fold-out-animation.css'
 import './styles.scss'
 
-import Slider1 from '../../images/homepage/slider1.jpeg'
-import Slider2 from '../../images/homepage/slider2.jpeg'
-import Slider3 from '../../images/homepage/slider3.jpeg'
-import Slider4 from '../../images/homepage/slider4.jpeg'
-import SliderS1 from '../../images/homepage/sliderS1.jpeg'
-import SliderS2 from '../../images/homepage/sliderS2.jpeg'
-import SliderS3 from '../../images/homepage/sliderS3.jpeg'
-import SliderS4 from '../../images/homepage/sliderS4.jpeg'
-import SliderS5 from '../../images/homepage/sliderS5.jpeg'
-import SliderS6 from '../../images/homepage/sliderS6.jpeg'
+import Slider1 from '../../images/home/slider1.jpeg'
+import Slider2 from '../../images/home/slider2.jpeg'
+import Slider3 from '../../images/home/slider3.jpeg'
+import Slider4 from '../../images/home/slider4.jpeg'
+import SliderS1 from '../../images/home/sliderS1.jpeg'
+import SliderS2 from '../../images/home/sliderS2.jpeg'
+import SliderS3 from '../../images/home/sliderS3.jpeg'
+import SliderS4 from '../../images/home/sliderS4.jpeg'
+import SliderS5 from '../../images/home/sliderS5.jpeg'
+import SliderS6 from '../../images/home/sliderS6.jpeg'
 
 export default function HomeSlider(props){
     const phone = props.phone 
@@ -55,9 +55,7 @@ export default function HomeSlider(props){
         </AutoplaySlider>
     )
 
-    if(phone){
-        return sliderS
-    }else{
-        return slider
-    }
+    const display = phone? sliderS : slider
+
+    return display
 }

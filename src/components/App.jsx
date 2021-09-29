@@ -28,10 +28,11 @@ export default function App(){
         getRecipes()
     },[])
 
+    const display = phone ? <RoutePhone recipes={recipes} names={names} cards={cards} /> : <RouteDesktop recipes={recipes} names={names} cards={cards} />
+
     return(
         <div>
-            {!phone && <RouteDesktop recipes={recipes} names={names} cards={cards} />}
-            {phone && <RoutePhone recipes={recipes} names={names} cards={cards} />}
+            {display}
             <Footer />
         </div>
     )

@@ -20,7 +20,8 @@ import susu from '../../images/logo.png'
 import './styles.scss'
 
 export default function RouteDesktop(props){
-    const {recipes, names, cards} = props
+    const names = props? props.names: []
+    const {recipes, cards} = props
     const [input, setInput] = useState('')
     return(
         <Router>
@@ -30,11 +31,11 @@ export default function RouteDesktop(props){
                 </div>
                 <div className='desktop_space'></div>
                 <div className='desktop_title'>
-                    <Link to='/recipes'><h3>分类菜谱</h3></Link>
-                    <Link to='/about'><h3>自由集市</h3></Link>
+                    <Link to='/recipes'><h2>分类菜谱</h2></Link>
+                    <Link to='/about'><h2>自由集市</h2></Link>
                 </div>
                 <div className='desktop_search'>
-                    { {names} && <Link to='/search'>
+                    <Link to='/search'>
                         <Autocomplete style={{maxWidth:'15rem',marginLeft:'auto',marginRight:'auto', fontFamily:'"Noto Serif SC", sans-serif!important'}}
                         freeSolo 
                         options={names}
@@ -46,9 +47,8 @@ export default function RouteDesktop(props){
                             )}
                         onInputChange={(event,newValue)=>{
                             setInput(newValue)
-                        }}
-                        />
-                    </Link>}
+                        }}/>
+                    </Link>
                 </div>
             </Paper>
             <Switch>

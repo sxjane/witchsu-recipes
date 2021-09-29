@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'XianErTi';
-    src: url('XianErTi.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-$primary-dark: #3b59a2;
-$primary-lighter:#dcedf5;          
-$primary-light:#d6eefa;
-$primary-basic:#bae1f5;   
-
-
 $font-primary: "Noto Serif SC", sans-serif;
 $black-light: #303030;
 $primary-background: #f9fbfc;
@@ -131,68 +117,41 @@ img{
 }
 
 /*****DividerSusu********/
-.divider_container{  
+
+.divider_text{
     margin-bottom: 5rem;
     margin-top:6rem;
     font-style: italic;
     text-align: center;
-        
-}
-.divider_text{
     line-height: 3rem;
     padding-left: 4rem;
     padding-right: 4rem;
     color:$fav-blue;
     letter-spacing: 0.3rem; 
-
-}
-.divider_su{
-    color:$fav-blue;
 }
 
-/*HomeDish*/
+/*******HomeDish******/
 .dish_container{
     display: flex;
     align-items:center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
-.dish_container_sm{
-    margin-bottom: 10rem;
-}
-
-.dish_img_container{
-    display: flex;
-    align-items: center;
-    padding-top: 5em;
-    padding-bottom: 3em;
+.phone_dish_container{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
 }
 .dish_img{
     flex:1;
+    padding-bottom: 1rem;
 }
 .dish_main{
     flex:2;
-    font-size: clamp(1rem, 2.5vw, 2rem);
     line-height: 2;
     padding-left: 1em;
     padding-right: 1em;
     text-align: justify;
-}
-.dish_name{
-    font-family: 'XianErTi';
-    text-align: center;
-    font-size: clamp(1rem, 4.5vw, 3.5rem); 
-    margin-bottom: -1rem;
-}F
-
-/*Divider*/
-.divider_group{
-    text-align: center;
-    // padding-top: 5rem;
-}
-.divider_group_text{
-    font-family: 'XianErTi';
-    text-align: center;
-    font-size: clamp(1rem, 4.5vw, 3.5rem); 
+    letter-spacing: 0.3rem;
 }
 
 /*home_group*/
@@ -233,5 +192,5 @@ img{
     margin-bottom: 0.5rem;
 }
 .tag_outline{
-    border:0.1rem $primary-dark dashed
+    border:0.1rem dashed
 }

@@ -26,7 +26,8 @@ import {
 import './styles.scss'
 
 export default function PhoneBar(props) {
-  const {recipes, names, cards} = props
+  const names = props? props.names: []
+  const {recipes, cards} = props
   const [input, setInput] = useState('')
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

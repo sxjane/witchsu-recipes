@@ -35,7 +35,7 @@ export default function RecipesGrid(props){
                     title={item.name}/>
                     <CardActions>
                         <Button variant='outlined' color='primary'>
-                        <a href={pathRecipes.concat(item.name, photoForm)} download><h4>{item.name}</h4></a>
+                        <a href={pathRecipes.concat(item.name, photoForm)} download><h3>{item.name}</h3></a>
                         </Button>
                     </CardActions><CardContent className={classes.cardContent}>
                         <h4>{item.country.concat(' ', item.method)}</h4>

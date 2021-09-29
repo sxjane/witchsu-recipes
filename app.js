@@ -8,7 +8,7 @@ const morgan = require('morgan')
 
 const {MongoClient} = require('mongodb')
 const {recipesByClass, searchRecipes} = require('./db/recipes')
-const { default: SelectInput } = require('@material-ui/core/Select/SelectInput')
+
 
 //command line arguments
 const parser = new ArgumentParser({
