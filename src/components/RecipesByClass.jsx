@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import Container from '@mui/material/Container';
 import RecipesGrid from './RecipesGrid'
+import MarginSpace from './MarginSpace'
 import './styles.scss'
 
 export default function RecipesByClass(props) {
@@ -12,11 +13,12 @@ export default function RecipesByClass(props) {
     </div>
   )
   return(
-      <Container maxWidth='xl'>
+      <Container maxWidth='lg'>
         {cards.map(card => (
           <div key={card._id}>
-            <h2>{card._id}</h2>
+            <h2 className='recipe_title'>{card._id}</h2>
             <RecipesGrid list={card.list} />
+            <div style={{marginBottom:'3rem'}}/>
           </div>
         ))}
       </Container>

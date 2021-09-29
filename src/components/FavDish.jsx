@@ -31,7 +31,7 @@ export default function FavDish(props){
   return (
     <Card elevation={props.paper}>
       <CardContent >
-        <h3 className='dish_content' style={{color:'#003797',paddingTop:'1rem'}}>{props.name}</h3>
+        <h3 className='dish_content' style={{color:'#003797',paddingTop:'1rem', textAlign:'center'}}>{props.name}</h3>
         <h3 className='dish_content'>{props.text}</h3>
       </CardContent>
       <CardActions disableSpacing>
