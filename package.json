@@ -14,12 +14,6 @@
   "author": "Xiaojie Si",
   "license": "ISC",
   "dependencies": {
-    "@egjs/react-infinitegrid": "^3.2.5",
-    "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.3.0",
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/styles": "^4.11.4",
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.0",
     "@mui/styles": "^5.0.1",
@@ -35,8 +29,6 @@
     "react": "^17.0.2",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^17.0.2",
-    "react-grid-gallery": "^0.5.5",
-    "react-photo-gallery": "sxjane/react-photo-gallery#073a5b3156891287aef6bfb894285cfcd5bda161",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
