@@ -75,7 +75,7 @@ module.exports={
         //       Bucket: 'thewonderfulwitchsu',
         //       ACL: 'private'
         //     }
-        //   })        
+        //   })
     ],
     resolve:{
         extensions:['.js', '.jsx']
