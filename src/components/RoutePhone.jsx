@@ -28,13 +28,7 @@ import {
 import './styles.scss'
 
 export default function PhoneBar(props) {
-  var names = ['数据传输中，请刷新一次']
-    if(props){
-        if(props.names){
-            names = props.names
-        }}
-  console.log('names:',names)
-  const {recipes, cards} = props
+  const {recipes, cards, names} = props
   const [input, setInput] = useState('')
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

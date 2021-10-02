@@ -54,7 +54,7 @@ const uri = 'mongodb+srv://witchsusu:witchsusu@clustersi.jw61m.mongodb.net/'
 const client = new MongoClient(uri)
 const dbName = 'recipes'
 const collName = 'basic'
-var classRecipes, names, recipes
+
 const getRecipes = async ()=>{
     try{
         classRecipes= await recipesByClass(client,dbName,collName)
@@ -62,20 +62,32 @@ const getRecipes = async ()=>{
         names = result.names
         recipes = result.recipes
         console.log('GetRecipes is done')
+        return {classRecipes, names, recipes}
     }catch(error){
         console.log(error)
     }
 }
-getRecipes()
+const setUp = async ()=>{
+    try{
+        const data = await getRecipes()
 
-//app route 
-app.get('/allRecipes',async (req,res)=>{
-    res.send({classRecipes, names, recipes})
-})
+        //app route 
+        app.get('/allRecipes',async (req,res)=>{
+            res.send(data)
+        })
+    
+        app.listen(args.port, '0.0.0.0',()=>{
+            console.log('production or not:',args.production)
+            console.log('Server is on the port:', args.port)
+        })
+    }catch(error){
+        console.log(error)
+    }
+}
 
-app.listen(args.port, '0.0.0.0',()=>{
-    console.log('production or not:',args.production)
-    console.log('Server is on the port:', args.port)
-})
+setUp()
+
+
+
 
 

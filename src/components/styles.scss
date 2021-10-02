@@ -112,7 +112,6 @@ img{
 .divider_text{
     font-style: italic;
     text-align: center;
-    line-height: 2;
     padding-left: 2rem;
     padding-right: 2rem;
     color:$fav-blue;
@@ -147,7 +146,7 @@ img{
     padding-right: 2rem;
 }
 
-/*home_group*/
+/********HomeGroup*******/
 .home_group_title{
     text-align: center;
     color:$fav-blue;
@@ -160,29 +159,32 @@ img{
     flex-direction: column;
 }
 
-/*home_withsu*/
-.home_witchsu_container{
-    display: flex; 
-    align-items: center;
-    
-}
-.home_witchsu_img{
-    flex:1
-}
-.home_witchsu_main{
-    flex:1;
-    font-size: clamp(1rem, 2vw, 2rem);
-    text-align: center;
-    
-}
-
+/*****HomeJoinUS*******/
 .join_us{
-    display:flex
+    display:flex;
+    align-items: center;
+    margin-top: -3.5rem
+}
+.phone_join_us{
+    margin-top: -3.5rem
 }
 
+/******JoinUs*******/
+.join_container{
+    flex:2;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.text_container{
+    display: flex;
+}
 
 /*RecipesByClass*/
 .recipe_title{
     margin-bottom: 0.5rem;
     margin-top:2rem;
 }
+

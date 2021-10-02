@@ -21,13 +21,7 @@ import susu from '../../images/logo.png'
 import './styles.scss'
 
 export default function RouteDesktop(props){
-    var names = ['数据传输中，请刷新一次']
-    if(props){
-        if(props.names){
-            names = props.names
-        }}
-    console.log('names:',names)
-    const {recipes, cards} = props
+    const {names,recipes, cards} = props
     const [input, setInput] = useState('')
     return(
         <Router>

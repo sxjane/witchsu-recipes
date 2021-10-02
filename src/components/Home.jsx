@@ -7,13 +7,7 @@ import Dish from './HomeDish'
 import HomeGroup from './HomeGroup'
 import MarginSpace from './MarginSpace'
 import GroupImg from './HomeGroupImg'
-import Divider from '@mui/material/Divider'
-
-
-// import HomeWitchSu from './HomeWitchSu'
-// import Divider from './Divider'
-
-// import JoinUs from './HomeJoinUs'
+import JoinUs from './HomeJoinUs'
 
 import dish1 from '../../images/home/dishFirst.png'
 import dish2 from '../../images/home/dishSecond.png'
@@ -57,6 +51,8 @@ export default function Home(props){
                 title='停留在美好时光——优哉游哉慢生活' 
                 G1={g21} G2={g22} G3={g23} G4={g24}/>
             <DividerSusu divider={true} text={SusuText.DIVIDER_TEXT3}/>
+            <JoinUs phone={phone}/>
+            <MarginSpace />
         </div>
     )
 }
