@@ -1,29 +1,29 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import Card from './HomeCard'
+import Card from './HomeCardDish'
 
-export default function FullWidthGrid(props) {
+export default function HomeGroup(props) {
 
   return (
     <div>
       <h2 className='home_group_title'>{props.title}</h2>
       <div className='home_group'>
-        <Grid container spacing={3} >
+        <Grid container spacing={8} >
           <Grid item xs={12} sm={6} md={3}>
-            <Card img={props.G1} name={'最多嫁妆鱼'} main={'这是一条女巫菜谱里被群友特命名为嫁妆最多的鱼'}/>
+            <Card img={props.G1} tag={'主菜 西餐 煎'}/>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-          <Card img={props.G2} name={'西班牙腊肠白豆'} main={'这是一碗课代表最爱的配菜，女巫说这是鱼的原配菜'}/>
+          <Card img={props.G2} tag={'配菜 西餐 炒'}/>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-          <Card img={props.G3} name={'红菜头沙拉'} main={'这是一个红红的红菜头沙拉，课代表还没有吃过的菜'}/>
+          <Card img={props.G3} tag={'配菜 西餐 拌'}/>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-          <Card img={props.G4} name={'芦笋奶油汤'} main={'这是一碗女巫请客的出镜率最多的无法抗拒的美味汤'}/>
+          <Card img={props.G4} tag={'汤 西餐 炒 打碎'}/>
           </Grid>
         </Grid>
       </div>
     </div>
     
-  );
+  )
 }

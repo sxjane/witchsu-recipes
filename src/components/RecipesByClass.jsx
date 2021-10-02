@@ -1,7 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import Container from '@mui/material/Container';
 import RecipesGrid from './RecipesGrid'
-import MarginSpace from './MarginSpace'
 import './styles.scss'
 
 export default function RecipesByClass(props) {

@@ -4,6 +4,7 @@ import Home from './Home'
 import RecipesByClass from './RecipesByClass'
 import About from './About'
 import Search from './Search'
+import Market from './Market'
 
 import Paper from '@mui/material/Paper'
 import Autocomplete from '@mui/material/Autocomplete'
@@ -20,7 +21,11 @@ import susu from '../../images/logo.png'
 import './styles.scss'
 
 export default function RouteDesktop(props){
-    const names = props? props.names: ['请再刷新一次吧']
+    var names = ['数据传输中，请刷新一次']
+    if(props){
+        if(props.names){
+            names = props.names
+        }}
     console.log('names:',names)
     const {recipes, cards} = props
     const [input, setInput] = useState('')
@@ -33,7 +38,8 @@ export default function RouteDesktop(props){
                 <div className='desktop_space'></div>
                 <div className='desktop_title'>
                     <Link to='/recipes'><h3>分类菜谱</h3></Link>
-                    <Link to='/about'><h3>自由集市</h3></Link>
+                    <Link to='/market'><h3>自由集市</h3></Link>
+                    <Link to='/about'><h3>我们团队</h3></Link>
                 </div>
                 <div className='desktop_search'>
                     <Link to='/search'>
@@ -59,11 +65,14 @@ export default function RouteDesktop(props){
                 <Route path='/recipes'>
                     <RecipesByClass cards={cards} />
                 </Route>
+                <Route path='/market'>
+                    <Market />
+                </Route>
                 <Route path='/about'>
                     <About />
                 </Route>
                 <Route path='/search'>
-                    <Search recipes={recipes} input={input}/>
+                    { names.length > 1 && <Search recipes={recipes} input={input}/>}
                 </Route>
             </Switch>
         </Router>

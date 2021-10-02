@@ -33,6 +33,7 @@ app.use(rewrite('/', INDEX_HTML))
 app.use(rewrite('/recipes', INDEX_HTML))
 app.use(rewrite('/about', INDEX_HTML))
 app.use(rewrite('/search', INDEX_HTML))
+app.use(rewrite('/market', INDEX_HTML))
 
 //production or not
 if (args.production) {

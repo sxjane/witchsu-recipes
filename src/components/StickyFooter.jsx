@@ -35,9 +35,6 @@ export default function StickyFooter() {
       女巫出品 必是佳肴
     </Typography>
     <Typography variant="body1" align="center" color="textSecondary" component="p">
-      女巫SU - 👽SU - AI SU - 阿拉丁神灯SU - 哆啦A梦SU - 释迦摩尼心性SU       
-    </Typography>
-    <Typography variant="body1" align="center" color="textSecondary" component="p">
       Email Us： <a style={{textDecoration:'underline', color:'#003797'}}href="mailto:thewonderfulwitchsu@gmail.com">thewonderfulwitchsu@gmail.com</a>
     </Typography>
     <Copyright />

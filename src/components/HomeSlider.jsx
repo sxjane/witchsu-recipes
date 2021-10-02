@@ -10,12 +10,16 @@ import Slider1 from '../../images/home/slider1.jpeg'
 import Slider2 from '../../images/home/slider2.jpeg'
 import Slider3 from '../../images/home/slider3.jpeg'
 import Slider4 from '../../images/home/slider4.jpeg'
+import Slider5 from '../../images/home/slider5.jpeg'
+
 import SliderS1 from '../../images/home/sliderS1.jpeg'
 import SliderS2 from '../../images/home/sliderS2.jpeg'
 import SliderS3 from '../../images/home/sliderS3.jpeg'
 import SliderS4 from '../../images/home/sliderS4.jpeg'
 import SliderS5 from '../../images/home/sliderS5.jpeg'
 import SliderS6 from '../../images/home/sliderS6.jpeg'
+import SliderS7 from '../../images/home/sliderS6.jpeg'
+import SliderS8 from '../../images/home/sliderS6.jpeg'
 
 export default function HomeSlider(props){
     const phone = props.phone 
@@ -25,7 +29,7 @@ export default function HomeSlider(props){
             className='home_slider'
             play={true}
             cancelOnInteraction={false}
-            interval={2000}
+            interval={3000}
             animation='foldOutAnimation'
             mobileTouch={true}
             organicArrows= {false}
@@ -34,6 +38,7 @@ export default function HomeSlider(props){
             <div data-src={Slider2} />
             <div data-src={Slider3} />
             <div data-src={Slider4} />
+            <div data-src={Slider5} />
         </AutoplaySlider>
     )
     const sliderS = (
@@ -41,7 +46,7 @@ export default function HomeSlider(props){
             className='home_slider_s'
             play={true}
             cancelOnInteraction={false}
-            interval={1000}
+            interval={1500}
             animation='foldOutAnimation'
             mobileTouch={true}
             organicArrows= {false}
@@ -52,6 +57,8 @@ export default function HomeSlider(props){
             <div data-src={SliderS4} />
             <div data-src={SliderS5} />
             <div data-src={SliderS6} />
+            <div data-src={SliderS7} />
+            <div data-src={SliderS8} />
         </AutoplaySlider>
     )
 

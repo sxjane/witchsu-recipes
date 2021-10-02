@@ -29,9 +29,9 @@ export default function FavDish(props){
   }
 
   return (
-    <Card elevation={props.paper}>
+    <Card elevation={props.paper} sx={{background:'#f9fbfc',marginLeft:'2rem'}}>
       <CardContent >
-        <h3 className='dish_content' style={{color:'#003797',paddingTop:'1rem', textAlign:'center'}}>{props.name}</h3>
+        <h2 className='dish_content' style={{color:'#003797',paddingTop:'1rem', paddingBottom:'1rem', textAlign:'center'}}>{props.name}</h2>
         <h3 className='dish_content'>{props.text}</h3>
       </CardContent>
       <CardActions disableSpacing>
@@ -46,7 +46,11 @@ export default function FavDish(props){
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <h3 className='dish_content'>{props.method}</h3>
+          <div className='dish_content'>
+            <h3>{props.food1}</h3>
+            {props.food2 && <h3>{props.food2}</h3>}
+            <h3>{props.method}</h3>
+          </div>
         </CardContent>
       </Collapse>
     </Card>

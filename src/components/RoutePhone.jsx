@@ -4,6 +4,7 @@ import Home from './Home'
 import RecipesByClass from './RecipesByClass'
 import About from './About'
 import Search from './Search'
+import Market from './Market'
 
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -16,6 +17,7 @@ import Divider from '@mui/material/Divider'
 
 import susu from '../../images/logo.png'
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,7 +28,11 @@ import {
 import './styles.scss'
 
 export default function PhoneBar(props) {
-  const names = props? props.names: ['请再刷新一次吧']
+  var names = ['数据传输中，请刷新一次']
+    if(props){
+        if(props.names){
+            names = props.names
+        }}
   console.log('names:',names)
   const {recipes, cards} = props
   const [input, setInput] = useState('')
@@ -79,7 +85,7 @@ export default function PhoneBar(props) {
               sx={{mx:'5rem'}} 
               onClick={handleClose}>
                 <Link to='/recipes'>
-                  <h3>分类菜谱</h3>
+                  <h2>分类菜谱</h2>
                 </Link>
             </MenuItem>
             <Divider />
@@ -87,7 +93,15 @@ export default function PhoneBar(props) {
               sx={{mx:'5rem'}} 
               onClick={handleClose}>
                 <Link to='/about'>
-                  <h3>自由集市</h3>
+                  <h2>自由集市</h2>
+                </Link>
+            </MenuItem>
+            <Divider />
+            <MenuItem 
+              sx={{mx:'5rem'}} 
+              onClick={handleClose}>
+                <Link to='/about'>
+                  <h2>我们团队</h2>
                 </Link>
             </MenuItem>
         </Menu>
@@ -100,10 +114,13 @@ export default function PhoneBar(props) {
             <RecipesByClass cards={cards}/>
         </Route>
         <Route path='/search'>
-            <Search recipes={recipes} input={input}/>
+            { names.length > 1 && <Search recipes={recipes} input={input}/>}
         </Route>
         <Route path='/about'>
             <About />
+        </Route>
+        <Route path='/market'>
+          <Market />
         </Route>
     </Switch>
     </Router>
