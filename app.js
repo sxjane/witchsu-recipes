@@ -43,7 +43,33 @@ if (args.production) {
         bucket:          'thewonderfulwitchsu',
         prefix:          STATIC_PREFIX
     });
-    app.use(staticServer.express)    
+
+    //TODO: hack the ExpressStaticS3
+    let me=staticServer;
+    let cutLength=staticServer._prefix.length+1;
+    static_s3 = (req, res, next) => {
+        if (req.method !== "GET") return next();
+        if (!req.path.startsWith(me._prefix + '/')) return next();
+
+        //get the path
+        //MUST url-decoding the path because we have chinese characters in the path
+        let path=decodeURIComponent(req.path);
+        console.log(path);
+        if (path.endsWith('/')) path+='index.html';
+        path=path.substr(cutLength);
+
+        //look up file
+        me.ready().then(()=> {
+            if (me._cache[path] === undefined) {
+                if (me._cache["error/404.html"] === undefined) next(404);  //if no error file then go to next
+                res.status(404).end(me._cache["error/404.html"]);
+            } else {
+                res.status(200).end(me._cache[path]);
+            }
+        });
+    }
+
+    app.use(static_s3)
 }
 else {
     app.use(STATIC_PREFIX, express.static(STATIC_DIR))
