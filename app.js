@@ -49,8 +49,9 @@ else {
     app.use(STATIC_PREFIX, express.static(STATIC_DIR))
 }
 
-//database setting 
-const uri = 'mongodb+srv://witchsusu:witchsusu@clustersi.jw61m.mongodb.net/'
+//database setting
+const uri = process.env.MONGODB_URI
+//TODO: assert if uri is not undefined
 const client = new MongoClient(uri)
 const dbName = 'recipes'
 const collName = 'basic'
