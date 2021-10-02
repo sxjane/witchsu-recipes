@@ -73,8 +73,8 @@ const setUp = async ()=>{
         const data = await getRecipes()
 
         //app route 
-        app.get('/allRecipes',async (req,res)=>{
-            res.send(data)
+        app.get('/allRecipes', (req,res)=>{
+            res.json(data)
         })
     
         app.listen(args.port, '0.0.0.0',()=>{
