@@ -8,6 +8,7 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon ./app.js",
+    "server-prod": "node ./app.js --production",
     "client": "webpack --mode development --watch",
     "deploy": "concurrently -kill others \"node ./app.js --production \" \"webpack --mode production\""
   },
