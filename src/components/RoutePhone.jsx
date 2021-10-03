@@ -86,7 +86,7 @@ export default function PhoneBar(props) {
             <MenuItem 
               sx={{mx:'5rem'}} 
               onClick={handleClose}>
-                <Link to='/about'>
+                <Link to='/market'>
                   <h2>自由集市</h2>
                 </Link>
             </MenuItem>
