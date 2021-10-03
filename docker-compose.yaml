@@ -15,3 +15,4 @@ services:
     - server-prod
     - --production
     - --port 3000
+    restart: always
